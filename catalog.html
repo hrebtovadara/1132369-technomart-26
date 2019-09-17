@@ -9,7 +9,7 @@
 <body>
     <header class="header-main">
 
-        <h1>
+        <h1 class="visually-hidden">
             «Техномарт»: Каталог перфораторов.
         </h1>
 
@@ -39,7 +39,7 @@
                 и инструментов для ремонта
             </div>
             <div class="info-contacts">
-                <div class="number">+7 (812) 555-05-55</div>
+                <div class="number"><a href="tel:+78125550555">+7 (812) 555-05-55</a></div>
                 г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
             </div>
             <div class="info-private">
@@ -85,7 +85,47 @@
 
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                            <label for="filter-bosch">BOSCH</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="interskol" id="filter-interskol">
+                            <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="makita" id="filter-makita" checked>
+                            <label for="filter-makita">MAKITA</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="dewalt" id="filter-dewalt">
+                            <label for="filter-dewalt">DEWALT</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="hitachi" id="filter-hitachi">
+                            <label for="filter-hitachi">HITACHI</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="radio" name="product-group" value="rechargeable" id="rechargeable-power" checked>
+                            <label for="rechargeable-power">АККУМУЛЯТОРНЫЕ</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="radio" name="product-group" value="mains" id="mains-power">
+                            <label for="mains-power">СЕТЕВЫЕ</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+            </form>
         </section>
 
         <section class="sorting-main">
@@ -113,7 +153,7 @@
                             BFG 3000
                         </a>
                     </h3>
-                    <a href="#"><img src="img/Perforator/Perforator_2.jpg"></a>
+                    <a href="#"><img src="img/perforator/perforator_2.jpg"></a>
                     <div class="button-buy">
                         <a href="#">Купить</a>
                         <a href="#">В закладки</a>
@@ -132,7 +172,7 @@
                             BFG 6000
                         </a>
                     </h3>
-                    <a href="#"><img src="img/Perforator/Perforator_3.jpg"></a>
+                    <a href="#"><img src="img/perforator/perforator_3.jpg"></a>
                     <div class="button-buy">
                         <a href="#">Купить</a>
                         <a href="#">В закладки</a>
@@ -151,7 +191,7 @@
                             BFG 2000
                         </a>
                     </h3>
-                    <a href="#"><img src="img/Perforator/Perforator_2.jpg"></a>
+                    <a href="#"><img src="img/perforator/perforator_2.jpg"></a>
                     <div class="button-buy">
                         <a href="#">Купить</a>
                         <a href="#">В закладки</a>
@@ -167,7 +207,7 @@
                             BFG 3000
                         </a>
                     </h3>
-                    <a href="#"><img src="img/Perforator/Perforator_2.jpg"></a>
+                    <a href="#"><img src="img/perforator/perforator_2.jpg"></a>
                     <div class="button-buy">
                         <a href="#">Купить</a>
                         <a href="#">В закладки</a>
@@ -186,7 +226,7 @@
                             BFG 6000
                         </a>
                     </h3>
-                    <a href="#"><img src="img/Perforator/Perforator_3.jpg"></a>
+                    <a href="#"><img src="img/perforator/perforator_3.jpg"></a>
                     <div class="button-buy">
                         <a href="#">Купить</a>
                         <a href="#">В закладки</a>
@@ -205,7 +245,7 @@
                             BFG 2000
                         </a>
                     </h3>
-                    <a href="#"><img src="img/Perforator/Perforator_2.jpg"></a>
+                    <a href="#"><img src="img/perforator/perforator_2.jpg"></a>
                     <div class="button-buy">
                         <a href="#">Купить</a>
                         <a href="#">В закладки</a>
@@ -221,7 +261,7 @@
                             BFG 3000
                         </a>
                     </h3>
-                    <a href="#"><img src="img/Perforator/Perforator_2.jpg"></a>
+                    <a href="#"><img src="img/perforator/perforator_2.jpg"></a>
                     <div class="button-buy">
                         <a href="#">Купить</a>
                         <a href="#">В закладки</a>
@@ -240,7 +280,7 @@
                             BFG 6000
                         </a>
                     </h3>
-                    <a href="#"><img src="img/Perforator/Perforator_3.jpg"></a>
+                    <a href="#"><img src="img/perforator/perforator_3.jpg"></a>
                     <div class="button-buy">
                         <a href="#">Купить</a>
                         <a href="#">В закладки</a>
@@ -259,7 +299,7 @@
                             BFG 2000
                         </a>
                     </h3>
-                    <a href="#"><img src="img/Perforator/Perforator_2.jpg"></a>
+                    <a href="#"><img src="img/perforator/perforator_2.jpg"></a>
                     <div class="button-buy">
                         <a href="#">Купить</a>
                         <a href="#">В закладки</a>
@@ -309,7 +349,7 @@
         <div class="footer-navigation">
 
             <p class="footer-logo"><a href="index.html">Техномарт</a></p>
-            <p class="footer-adress">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <p class="footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
                 +7 (812) 555-05-55</p>
 
             <ul class="footer-nav-site">
@@ -343,7 +383,7 @@
 
             <p>
                 Обратная связь:<br>
-                <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
 
             <p>
