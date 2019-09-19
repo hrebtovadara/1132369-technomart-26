@@ -1,6 +1,174 @@
-body{
+/* Глобальные теги */
+body {
     margin: 0;
     padding: 0;
 
+    font-family: "PT Sans", Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    
+
+    background-color: #ffffff;
+    background-position: top center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    }
+img {
+    max-width: 100%;
+  }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+/* header */
+
+.header-main {
+    background-color: #f3f7f8;
+}
+.header-line {
+    background-color: #293449;
+    font-family: "Cuprum", Arial, sans-serif; 
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+}
+/* Логотип */
+.header-logo {
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
+    height: 42px;
+    display: block;
+    width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
     
 }
+.header-logo:hover {
+    background-color: #ca2c37;
+    border-bottom: 5px solid #9a212a;
+}
+.header-logo:active {
+    background-color: #ba2732;
+    border-bottom: 5px solid #8e1e26;
+}
+/* Окно поиска */
+.header-search{
+    background-image: url(../img/icon/icon-search.svg);
+    background-repeat: no-repeat;
+    background-color: #293449;
+    border: none;
+    font-family: "Cuprum", Arial, sans-serif; 
+    font-size: 17px;
+    line-height: 18px;
+    padding-left:30px;
+    box-sizing: border-box;
+    width: 150px;
+    height: 42px;
+}
+
+
+input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я нашла в инете, т.к. сама как изменить цвет placeholder я не придумала */
+/* вторая часть */
+
+.info-description{
+    color: #ee3643;
+
+}
+.number{
+    border: 3px solid #ffffff;
+    background-image: url(../img/icon/icon-iphone.svg) no-repeat;
+
+
+
+}
+
+/* Навигация */
+
+.navigation-mine{
+    background-color: #293449;
+    border-bottom: 5px solid 293449;
+    color: #ffffff;
+    font-family: "Cuprum", Arial, sans-serif; 
+    font-size: 17px;
+    line-height: 17px;
+    
+
+
+}
+.navigation-site li{
+    width: 127px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+.info-enter{
+    list-style: none;
+}
+.navigation-site{
+    list-style: none;
+}
+/* Закладки, Корзина, Оформить заказ */
+
+.header-bookmark{
+    background-image: url(../img/icon/icon-bookmarks.svg);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 42px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.header-basket{
+    background-image: url(../img/icon/icon-cart.svg);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 42px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.header-order{
+    background-color: #63a63e;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 42px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+
+/* Каталог предложений */
+
+.box{
+
+    width: 300px;
+    height: 123px;
+    box-sizing: border-box;
+}
+.box p{
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.materials{background-color:#ffbf47 }
+.tool{background-color:#3bbce3 }
+.technics{background-color:#dc91d8 }
+.sale{background-color:#8ed78f }
+.delivery{background-color:#8ed78f }
+
+
+

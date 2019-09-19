@@ -10,43 +10,45 @@
 
 <body>
   <header class="header-main">
-
-    <h1>
+  
+    <h1 class="visually-hidden">
       «Техномарт» - Интернет-магазин
       cтроительных материалов
       и инструментов для ремонта
     </h1>
 
-    <div class="header-main-line">
-      <div class="header-main-logo">
-        <a href="index.html"><img src="img/Logo/logo.png"></a>
+    <div class="header-line">
+      <a href="index.html">
+        <div class="header-logo">
+          <img src="img/Logo/logo.png">
+        </div>
+      </a>
+      <div>
+        <input class="header-search" type="search" placeholder="Поиск:">
       </div>
-      <div class="header-main-search">
-        <input type="search" placeholder="Поиск:">
-      </div>
-      <div class="header-main-bookmark">
+      <div class="header-bookmark">
         Закладки:
       </div>
-      <div class="header-main-basket">
+      <div class="header-basket">
         Корзина:
       </div>
-      <div class="header-main-order">
-        <a href="#">Оформить заказ</a>
+      <div class="header-order">
+        <a  href="#">Оформить заказ</a>
       </div>
     </div>
 
-    <div class="header-main-info">
+    <div class="header-info">
       <div class="info-description">
-        Интернет-магазин<br>
+       <i> Интернет-магазин<br>
         cтроительных материалов<br>
-        и инструментов для ремонта
+        и инструментов для ремонта</i>
       </div>
       <div class="info-contacts">
         <div class="number"><a href="tel:+78125550555">+7 (812) 555-05-55</a></div>
         г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
       </div>
       <div class="info-private">
-        <ul>
+        <ul class="info-enter">
           <li class="sign-in"><a href="#">Войти</a></li>
           <li class="check-in"><a href="#">Регистрация</a></li>
         </ul>
@@ -68,18 +70,18 @@
   <!-- То, что отмечено красным -->
   <main class="container">
     <section class="container-catalog">
-      <h2>Каталог предложений</h2>
-      <div class="materials">
+      <h2 class="visually-hidden">Каталог предложений</h2>
+      <div class="box materials">
         <p>Материалы</p>
         <a href="#">На любой вкус</a>
       </div>
 
-      <div class="tool">
+      <div class="box tool">
         <p>Инструмент</p>
         <a href="#">На все случаи</a>
       </div>
 
-      <div class="technics">
+      <div class="box technics">
         <p>Техника</p>
         <a href="#">Для стройки</a>
       </div>
@@ -98,12 +100,12 @@
         </div>
       </div>
 
-      <div class="sale">
+      <div class="box sale">
         <p>Скидки 50%</p>
         <a href="#">На 350 товаров</a>
       </div>
 
-      <div class="delivery">
+      <div class="box delivery">
         <p>Доставка</p>
         <a href="#">Бесплатно</a>
       </div>
@@ -231,7 +233,7 @@
       </p>
 
       <ul class="servises-list">
-          <li><button type="button">Доставка</button></li>
+        <li><button type="button">Доставка</button></li>
         <li><button type="button">Гарантия</button></li>
         <li><button type="button">Кредит</button></li>
       </ul>
@@ -298,28 +300,28 @@
 
       <p>Вы можете забрать товар сами, <br>
         заехав в наш офис:</p>
-      
+
       <p>
         <img src="img/Map/Map.png">
       </p>
 
       <button type="button">Заблудились? Напишите нам!</button>
-        <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="contacts-item">
-              <label for="contacts-name">Ваше имя:</label>
-              <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p class="contacts-item">
-              <label for="contacts-email">Ваш e-mail:</label>
-              <input id="contacts-email" type="text" name="email" value="" placeholder="email@example.com">
-          </p>
-          <p class="contacts-item-text">
-              <label for="contacts-text">Текст письма:</label>
-              <input id="contacts-text" type="text" name="text" value="" placeholder="В свободной форме">
-          </p>
-          <button class="contacts-button" type="submit">Отправить</button>
+      <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contacts-item">
+          <label for="contacts-name">Ваше имя:</label>
+          <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="contacts-item">
+          <label for="contacts-email">Ваш e-mail:</label>
+          <input id="contacts-email" type="text" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="contacts-item-text">
+          <label for="contacts-text">Текст письма:</label>
+          <input id="contacts-text" type="text" name="text" value="" placeholder="В свободной форме">
+        </p>
+        <button class="contacts-button" type="submit">Отправить</button>
       </form>
-      
+
     </section>
 
   </main>
