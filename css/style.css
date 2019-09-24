@@ -30,7 +30,31 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+.button{
+    color: #ffffff;
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    line-height: 18px;
 
+    background-color: #ee3643;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.button:hover,
+.button:focus {
+    background-color: #ca2c37;
+}
+.button:active {
+  background-color: #ba2732;
+}
+footer{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
 /* header */
 
 .header-main {
@@ -80,44 +104,7 @@ img {
 
 
 input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я нашла в инете, т.к. сама как изменить цвет placeholder я не придумала */
-/* вторая часть */
 
-.info-description{
-    color: #ee3643;
-
-}
-.number{
-    border: 3px solid #ffffff;
-    background-image: url(../img/icon/icon-iphone.svg) no-repeat;
-
-
-
-}
-
-/* Навигация */
-
-.navigation-mine{
-    background-color: #293449;
-    border-bottom: 5px solid 293449;
-    color: #ffffff;
-    font-family: "Cuprum", Arial, sans-serif; 
-    font-size: 17px;
-    line-height: 17px;
-    
-
-
-}
-.navigation-site li{
-    width: 127px;
-    padding: 20px 20px;
-    box-sizing: border-box;
-}
-.info-enter{
-    list-style: none;
-}
-.navigation-site{
-    list-style: none;
-}
 /* Закладки, Корзина, Оформить заказ */
 
 .header-bookmark{
@@ -146,15 +133,86 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
     text-align: center;
     
 }
+/* вторая часть */
 
+.info-description{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+    font-style:italic;
+
+}
+.number{
+    border: 3px solid #ffffff;
+    background-image: url(../img/icon/icon-iphone.svg);
+    padding-left:30px; 
+    background-repeat: no-repeat;
+    width: 264px;
+    height: 39px;
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+
+}
+info-contacts{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+.info-enter li{
+    background-color: #ffffff;
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 21px;
+    line-height: 21px;
+    height: 45px;
+}
+.sign-in{
+    width: 121px;
+    background-image: url(../img/icon/icon-login.svg);                                  /* пересохранить svg */
+    padding-left:30px;
+    background-repeat: no-repeat;
+}
+.check-in{
+    width: 150px;
+}
+
+/* Навигация */
+
+.navigation-mine{
+    background-color: #32425c;
+    color: #ffffff;
+    font-family: "Cuprum", Arial, sans-serif; 
+    font-size: 17px;
+    line-height: 17px;
+    border-bottom: #293449 solid 5px;
+}
+.navigation-site li{
+    width: 127px;
+    padding: 20px 20px;
+}
+.navigation-site li:hover,
+.navigation-site li:focus{
+    background-color: #293449; 
+}
+.navigation-site li:active{
+    background-color: #1d2739;
+    color: #a8abaf;
+}
+.info-enter{
+    list-style: none;
+}
+.navigation-site{
+    list-style: none;
+}
 
 /* Каталог предложений */
 
 .box{
-
     width: 300px;
     height: 123px;
-    box-sizing: border-box;
 }
 .box p{
     font-family: Cuprum, Arial, sans-serif;
@@ -163,12 +221,409 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
     font-weight: bold;
     color: #ffffff;
 }
+.more-detals{
+    
+    color: #ffffff;
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
 
-.materials{background-color:#ffbf47 }
-.tool{background-color:#3bbce3 }
-.technics{background-color:#dc91d8 }
-.sale{background-color:#8ed78f }
-.delivery{background-color:#8ed78f }
+    width: 135px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: rgba(5, 0, 0, 0.1);
+}
+.more-detals:hover,
+.more-detals:focus{
+    background-color: rgba(5, 0, 0, 0.2);
+}
+.more-detals:active{
+    background-color: rgba(5, 0, 0, 0.3);
+}
+.materials{
+    background-color:#ffbf47;
+    background-image: url(../img/icon/materials.svg);
+    background-repeat: no-repeat; 
+}
+.tool{
+    background-color: #3bbce3; 
+    background-image: url(../img/icon/tool.svg);
+    background-repeat: no-repeat;
+}
+.technics{
+    background-color:#dc91d8; 
+    background-image: url(../img/icon/technics.svg);
+    background-repeat: no-repeat;
+}
+.sale{
+    background-color:#8ed78f; 
+    background-image: url(../img/icon/sale.svg);
+    background-repeat: no-repeat;
+}
+.delivery{
+    background-color:#ffc047; 
+    background-image: url(../img/icon/delivery.svg);
+    background-repeat: no-repeat;
+}
+/* Слайдер */
+.catalog-main{
+    width: 620px;
+    color: #ffffff;
+    background-image: url(../img/icon/icon-left.svg);
+    background-image: url(../img/icon/icon-right.svg);
+    background-repeat: no-repeat;
+}
+.catalog-drill{
+    height: 266px;
+    background-image: url(../img/slider/slider-1.jpg);
+}
+.catalog-perforator{
+    height: 266px;
+    background-image: url(../img/slider/slider-2.jpg);
+}
+.tool-name{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.tool-comment{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+/* популярные товары */
+
+.popular-products {
+    background-color: #f9f5f0;
+    text-transform: uppercase;
+    
+}
+.popular-products h2{
+    color: #32425c;
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
 
 
+/* Перфораторы */
 
+.description-product {
+    list-style: none;
+}
+.description-product li{
+    border: #eaeaea solid 1px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.description-product li:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+.old-price{
+    color: #a9a9a9;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.new-price{     
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 18px;
+    vertical-align: middle;
+    border: 1px solid #ee3643;
+    width: 120px;
+    border-radius: 5px;
+    position: relative;
+    background: #ee3643;
+    color: #ffffff;
+    height: 38px;
+    Line-height: 36px;
+    margin: 0 auto;
+   }
+   .new-price::after, .new-price::before {
+    content: '';
+    position: absolute;
+    background: #ee3643;
+    left: 105px; bottom: 5px;
+    width: 28px; height: 28px;
+    
+    z-index: -1; 
+    transform: rotate(45deg); 
+    
+   }
+   .buy-now{
+        font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+        background-image: url(#);               /* Вставить картинку*/
+        color: #ffffff;
+
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+       width: 135px;
+       height: 35px;
+       text-transform: uppercase; 
+       border-radius: 3px;
+       background-color: #63a63e;
+       box-shadow: 0 3px  0 0 rgba(54, 115, 21, 1);
+   }
+   .buy-now:hover,
+   .buy-now:focus{
+       background-color: #5fbb2d;
+    }
+    .buy-now:active{
+        background-color: #518534;
+        box-shadow: 0 3px  0 0 rgba(81, 133, 52, 1);
+
+    }
+   .buy-later{
+        font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+        color: #32425c;
+
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 129px;
+        height: 32px;
+        border: #63a63e solid 3px;
+        text-transform: uppercase; 
+        border-radius: 3px;
+   }
+   .buy-later:hover,
+   .buy-later:focus{
+        border: #32425c solid 3px;
+   }
+   .buy-later:active{
+        border: #c1c6ce solid 3px;;
+        color: #c1c6ce;
+   }
+/* Популярные производители */
+
+.popular-manufacturers{
+background-color: #f9f5f0;
+text-transform: uppercase;
+}
+.popular-manufacturers h2{
+color: #32425c;
+font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+font-size: 30px;
+line-height: 30px;
+font-weight: normal;
+}
+
+/* Производители */
+.manufacturers-list {
+    list-style: none;
+}
+.manufacturers-list li{
+    border: #ebebeb solid 1px;
+    margin: 10px;
+    text-align: center;
+    width: 218px;
+    height: 143px;
+    box-sizing: border-box;
+}
+.manufacturers-list li:hover,
+.manufacturers-list li:focus{
+    box-shadow: 0 10px 25px rgba(41,52,73,0.5);
+    border: none;
+}
+.manufacturers-list li:active{
+    box-shadow: 0 4px 10px rgba(41,52,73,0.5);       /* здесь нужно проверить opacity при наведении и нажатии. */
+    border: none;
+    
+}
+.manufacturers-list li:active img{
+    opacity: .3;
+}
+
+  /* Сервисы */
+
+.servises {
+    background-color: #f4f7f9;
+    font-size: 13px;
+    line-height: 24px;
+}
+.servises h2{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; ;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.servises-list{
+    list-style: none;
+}
+
+.servises-list button{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #32425c;
+    border-bottom: #293449 solid 1px;
+    border-top: #405069 solid 1px;
+    width: 240px;
+    height: 62px;
+}
+.servises-list button:hover,
+.servises-list button:focus{
+    background-color: #293449;
+    border-bottom: none;
+    border-top: #405069 solid 1px;
+}
+.servises-list button:active{
+    color: #32425c;
+    background-color: #ffffff;
+    border: #e5e5e5 solid 1px;
+}
+.servises-item h3{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+/* Компания ТЕХНОМАРТ */
+
+.company-info h2{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.company li{
+    list-style: none;
+}
+.company li::before{
+    content: url("../img/icon/marker.svg");
+    
+}
+.company{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 18px;
+    line-height: 20px;
+  
+}
+/* Контакты */
+
+.company-contacts h2{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.company-contacts button{
+    
+    border: none;
+    color: #ffffff;
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    line-height: 18px;
+
+    background-color: #ee3643;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* попап */
+.contacts-form{
+    border-top: #ff5357 solid 7px;
+    width: 620px;
+    height: 423px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.75);
+}
+.contacts-item label,
+.contacts-item-text label {
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 18px;
+    line-height: 18px;
+}
+.contacts-item input{
+    border: #dee3e4 solid 2px;
+    color: #dee3e4;
+    font-size: 13px;
+    line-height: 18px;
+    width: 216px;
+    height: 34px;
+    border-radius: 5px;
+}
+.contacts-item-text input{
+    border: #dee3e4 solid 2px;
+    color: #dee3e4;
+    font-size: 13px;
+    line-height: 18px;
+    width: 456px;
+    height: 110px;
+    border-radius: 5px;
+}
+/* Подвал */
+/* Навигация в подвале */
+.footer-navigation{
+    background-color: #32425c;
+  }
+
+.footer-logo{
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
+    height: 63px;
+    display: block;
+    width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+.footer-logo:hover {
+    background-color: #ca2c37;
+    border-bottom: 5px solid #9a212a;
+}
+.footer-logo:active {
+    background-color: #ba2732;
+    border-bottom: 5px solid #8e1e26;
+}  
+.list-nav ul{
+    list-style: none;
+}
+.footer-nav-technics{
+    color: #ffd180;
+}
+.list-nav li:hover{
+    text-decoration-line: underline;
+}
+.list-nav li:active{
+    opacity: 0.3;
+    text-decoration-line: none;
+}
+/* Контакты в подвале */
+
+.footer-feedback{
+    background-color: #293449;
+    font-size: 18px;
+    line-height: 24px;
+}
+.footer-feedback a{
+    color: #ffd180;
+}
+.footer-social{
+    list-style: none;
+
+}
