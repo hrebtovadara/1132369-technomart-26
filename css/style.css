@@ -727,6 +727,93 @@ font-weight: normal;
 
 }
 /* ФИЛЬТРЫ */
+
+.filters h2{
+    font-family: "PT Sans", Arial, Helvetica, sans-serif; 
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    background-color: #f7f3ec;
+}
+
+/* фильтр range */
+.range-window{
+background-color: #f7f3ec;
+    height: 80px;
+    width: 220px;
+    position: relative;
+    border-radius: 5px;
+}
+.one{
+    background-color: #d7dcde;
+    height: 2px;
+    width: 170px;
+    position: absolute;
+    bottom: 31px;
+    right: 25px;
+    border: none;
+}
+.two{
+    background-color: #00ca74;
+    height: 2px;
+    width: 140px;
+    position: absolute;
+    bottom: 31px;
+    right: 55px;
+    border: none;
+}
+.three{
+    height: 4px;
+    width: 4px;
+    display: block;
+    background-color: #ababab;
+    border-radius: 50px;
+    border: #ffffff solid 8px;
+    position: absolute;
+    bottom: 29px;
+    right: 55px;
+    box-shadow: 0 2px 0px rgba(224,221,216,1);
+}
+.four{
+    width: 4px;
+    height: 4px;
+    display: block;
+    background-color: #ababab;
+    border-radius: 50px;
+    border: #ffffff solid 8px;
+    position: absolute;
+    bottom: 29px;
+    right: 178px;
+    box-shadow: 0 2px 0px rgba(224,221,216,1);
+}
+.range p{
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.filter-price{
+    background-color: #f7f3ec;
+    display: inline-block;
+    width: 95px;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.filter-line{
+    width: 220px;
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+}
+   
+
+   /* Остальные Фильтры */
 .filter fieldset{
     border: none;
     text-transform: uppercase;
@@ -768,6 +855,16 @@ font-weight: normal;
     color: #ee3643;
     text-decoration: none;
 }
+.show{
+    border: #e5e5e5 solid 1px;
+    background-color: #ffffff;
+    border-radius: 2px;
+
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif; 
+   }
 /* Страницы */
 .pagination-list{
     list-style: none;
