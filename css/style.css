@@ -37,8 +37,7 @@ img {
     line-height: 18px;
 
     background-color: #ee3643;
-    text-align: center;
-    vertical-align: middle;
+    
     border-radius: 5px;
     text-transform: uppercase;
 }
@@ -101,7 +100,20 @@ footer{
     width: 150px;
     height: 42px;
 }
-
+.header-search:hover
+{
+    background-image: url(../img/icon/icon-search-hover.svg);
+    background-repeat: no-repeat;
+    background-color: #212a3a;
+}
+.header-search:focus,
+.header-search:active{
+    background-image: url(../img/icon/icon-search-active.svg);
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    color: #000000;
+    
+}
 
 input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я нашла в инете, т.к. сама как изменить цвет placeholder я не придумала */
 
@@ -112,10 +124,20 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
     background-repeat: no-repeat;
     width: 150px;
     height: 42px;
-    box-sizing: border-box;
     text-align: center;
-    
 }
+.header-bookmark:hover,
+.header-bookmark:focus{
+    background-image: url(../img/icon/icon-bookmarks-hover.svg);
+    background-repeat: no-repeat;
+    background-color: #212a3a;
+}
+.header-bookmark:active{
+    background-image: url(../img/icon/icon-bookmarks-active.svg);
+    background-repeat: no-repeat;
+    background-color: #161d29;
+}
+
 .header-basket{
     background-image: url(../img/icon/icon-cart.svg);
     background-repeat: no-repeat;
@@ -124,14 +146,31 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
     box-sizing: border-box;
     text-align: center;
 }
+.header-basket:hover,
+.header-basket:focus{
+    background-image: url(../img/icon/icon-cart-hover.svg);
+    background-repeat: no-repeat;
+    background-color: #212a3a;
+}
+.header-basket:active{
+    background-image: url(../img/icon/icon-cart-active.svg);
+    background-repeat: no-repeat;
+    background-color: #161d29;
+}
 .header-order{
     background-color: #63a63e;
-    background-repeat: no-repeat;
     width: 150px;
     height: 42px;
-    box-sizing: border-box;
     text-align: center;
     
+}
+.header-order:hover,
+.header-order:focus{
+    background-color: #5fbb2d;
+}
+.header-order:active{
+    background-color: #518534;
+    color: b6c8ae
 }
 /* вторая часть */
 
@@ -156,7 +195,7 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
     color: #ee3643;
 
 }
-info-contacts{
+.info-contacts{
     font-family: "Cuprum", Arial, Helvetica, sans-serif; 
     font-size: 14px;
     line-height: 24px;
@@ -169,11 +208,23 @@ info-contacts{
     line-height: 21px;
     height: 45px;
 }
+.info-enter li:hover{
+    color: #ee3643;
+}
+.info-enter li:active{
+    color: #c5c5c5;
+}
 .sign-in{
     width: 121px;
     background-image: url(../img/icon/icon-login.svg);                                  /* пересохранить svg */
     padding-left:30px;
     background-repeat: no-repeat;
+}
+.sign-in:hover{
+    background-image: url(../img/icon/icon-login-hover.svg);      
+}
+.sign-in:active{
+    background-image: url(../img/icon/icon-login-active.svg);      
 }
 .check-in{
     width: 150px;
@@ -234,8 +285,7 @@ info-contacts{
     border-radius: 5px;
     background-color: rgba(5, 0, 0, 0.1);
 }
-.more-detals:hover,
-.more-detals:focus{
+.more-detals:hover{
     background-color: rgba(5, 0, 0, 0.2);
 }
 .more-detals:active{
@@ -625,5 +675,165 @@ font-weight: normal;
 }
 .footer-social{
     list-style: none;
+
+}
+/* CATALOG --------------------------------------------------------------------------------------------------------------------------------------------*/
+.breadcrumbs{
+    list-style: none;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.catalog-heading{
+    background-color: #f2f6f8;
+    height: 89px;
+
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+    font-weight: normal;
+}
+.name-login{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 21px;
+    line-height: 21px;
+}
+.account-nav a{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    text-decoration: underline;
+}
+.account-nav a:hover,
+.account-nav a:focus{
+    color: #ee3643;
+}
+.account-nav a:active{
+    color: rgba(50, 66, 92, 0.3);
+}
+
+
+.info-login{
+    background-color: #ffffff;
+
+}
+.account-exit{
+    border: none;
+    background-image: url(../img/icon/icon-login.svg);
+    background-repeat: no-repeat;
+
+}
+/* ФИЛЬТРЫ */
+.filter fieldset{
+    border: none;
+    text-transform: uppercase;
+}
+.filter legend{
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.filter ul{
+    list-style: none;
+    line-height: 20px;
+}
+.filter-input:disabled + label{
+    opacity: 0.4;
+    color: #000000;
+}
+.sorting{
+    background-color: #f7f3ec;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.sorting-part{
+    list-style: none;
+    
+}
+.sorting-part li{
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: underline dotted #ee3643;
+    /* border-bottom: #ee3643 dotted 1px;  */
+}
+.sorting-part li:hover{
+    color: #000000;
+    text-decoration: underline solid #ee3643;
+
+}
+.sorting-part li:active{
+    color: #ee3643;
+    text-decoration: none;
+}
+/* Страницы */
+.pagination-list{
+    list-style: none;
+
+}
+.pagination-list a{
+    background-color: #ffffff;
+    border: #e5e5e5 solid 1px;
+
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+}
+.pagination-list a:hover{
+    border: #bdc6ca solid 1px;
+}
+.pagination-list a:active{
+    border: #ee3643 solid 1px;
+}
+.pagination-item-now a{
+    background-color: #ee3643;
+    color: #ffffff;
+    border: none;
+}
+.pagination-item-now a:hover,
+.pagination-item-now a:focus,
+.pagination-item-now a:active{
+    background-color: #ee3643;
+    color: #ffffff;
+    border: none;
+}
+/* о перфораторах */
+.pre-footer{
+    background-color: #f2f6f8;
+    font-size: 13px;
+    line-height: 24px;
+}
+.pre-footer  h2{
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+/* pop-up */
+.notification{
+    border-top: #ee3643 solid 7px;
+
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 30px;
+    line-height: 30px;
+}
+.bottom-button{
+    background-color: #f1f1f1;
+}
+.button-shop{
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+ 
+
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
 
 }
