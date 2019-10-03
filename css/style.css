@@ -54,10 +54,17 @@ footer{
     line-height: 24px;
     color: #ffffff;
 }
+*, *::before, *::after{
+box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
 /* header */
 
 .header-main {
     background-color: #f3f7f8;
+    min-height: 320px;
 }
 .header-line {
     background-color: #293449;
@@ -65,16 +72,16 @@ footer{
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
+    height: 42px;
 }
 /* Логотип */
 .header-logo {
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
-    height: 42px;
+    height: 47px;
     display: block;
     width: 220px;
     text-align: center;
-    box-sizing: border-box;
     padding: 10px;
     
 }
@@ -96,8 +103,7 @@ footer{
     font-size: 17px;
     line-height: 18px;
     padding-left:30px;
-    box-sizing: border-box;
-    width: 150px;
+    width: 270px;
     height: 42px;
 }
 .header-search:hover
@@ -143,7 +149,6 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
     background-repeat: no-repeat;
     width: 150px;
     height: 42px;
-    box-sizing: border-box;
     text-align: center;
 }
 .header-basket:hover,
@@ -240,9 +245,15 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
     line-height: 17px;
     border-bottom: #293449 solid 5px;
 }
+.navigation-site{
+    margin: 0;
+    padding: 0;
+}
 .navigation-site li{
-    width: 127px;
-    padding: 20px 20px;
+    /* width: 127px; */
+    /* padding: 20px 20px; */
+    height: 60px;
+    
 }
 .navigation-site li:hover,
 .navigation-site li:focus{
@@ -483,8 +494,7 @@ font-weight: normal;
     text-align: center;
     width: 218px;
     height: 143px;
-    box-sizing: border-box;
-}
+    }
 .manufacturers-list li:hover,
 .manufacturers-list li:focus{
     box-shadow: 0 10px 25px rgba(41,52,73,0.5);
@@ -639,7 +649,7 @@ font-weight: normal;
     display: block;
     width: 220px;
     text-align: center;
-    box-sizing: border-box;
+    
     
 }
 .footer-logo:hover {
@@ -700,6 +710,36 @@ font-weight: normal;
     font-size: 21px;
     line-height: 21px;
 }
+.name-login:active{
+    color: #c5c5c5;
+}
+.account:hover path,
+.account:focus path{
+    fill: #32425c;
+}
+.account:active path{
+    fill: #c5c5c5;
+}
+.account-exit{
+    border: none;
+    background-color: transparent;
+}
+
+.account-exit:hover path,
+.account-exit:focus path{
+    fill: #32425c;
+}
+.account-exit:active path{
+    fill: #c5c5c5;
+}
+.account-exit:hover polygon,
+.account-exit:focus polygon{
+    fill: #32425c;
+}
+.account-exit:active polygon{
+    fill: #c5c5c5;
+}
+
 .account-nav a{
     font-family: "Cuprum", Arial, Helvetica, sans-serif; 
     font-size: 16px;
@@ -715,16 +755,14 @@ font-weight: normal;
     color: rgba(50, 66, 92, 0.3);
 }
 
-
+.circle{
+    width: 4px;
+	height: 4px;
+	background: #32425c;
+	border-radius: 50px;
+}
 .info-login{
     background-color: #ffffff;
-
-}
-.account-exit{
-    border: none;
-    background-image: url(../img/icon/icon-login.svg);
-    background-repeat: no-repeat;
-
 }
 /* ФИЛЬТРЫ */
 
@@ -855,6 +893,17 @@ background-color: #f7f3ec;
     color: #ee3643;
     text-decoration: none;
 }
+.arrow{
+    border: none;
+    background-color: transparent;
+}
+.arrow:hover polygon,
+.arrow:focus polygon{
+    fill: #231f20;
+}
+.arrow:active polygon{
+    fill: #ee3643;
+}
 .show{
     border: #e5e5e5 solid 1px;
     background-color: #ffffff;
@@ -934,3 +983,56 @@ background-color: #f7f3ec;
     font-weight: normal;
 
 }
+/* --------------------------------------------------------ФЛЕКСЫ--------------------------------------------------------------------------------- */
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+.header-main{
+  width: 100%;
+  margin-bottom: 59px; 
+}
+.header-line{
+    justify-content: center;
+    display: flex;
+   
+}
+.header-info{
+    display: flex;
+    justify-content: space-around;
+    min-height: 158px;
+    align-items: center;
+    
+}
+.navigation-site {
+    display: flex;
+    justify-content: center;
+  
+    align-items: center;
+    
+}
+.container-catalog{
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalog-part-one{
+    display: flex;
+    align-items: flex-start;
+}
+.catalog-part-two{
+    display: flex;
+    margin-right: 20px;
+}
+
+.catalog-part-three{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.box{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
