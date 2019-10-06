@@ -560,15 +560,34 @@ font-weight: normal;
     text-transform: uppercase;
     color: #32425c;
 }
+.servises-delivery{
+background-image: url(../img/servise/servise-1.png);
+background-repeat: no-repeat;
+}
+.servises-guarantee{
+    background-image: url(../img/servise/servise-2.png);
+    background-repeat: no-repeat;
+
+}
+.servises-credit{
+    background-image: url(../img/servise/servise-3.png);
+    background-repeat: no-repeat;
+
+}
 
 /* Компания ТЕХНОМАРТ */
-
+.company-info{
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+}
 .company-info h2{
     font-family: "Cuprum", Arial, Helvetica, sans-serif; 
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
     text-transform: uppercase;
+    margin: 0px;
 }
 .company li{
     list-style: none;
@@ -591,6 +610,7 @@ font-weight: normal;
     line-height: 30px;
     font-weight: normal;
     text-transform: uppercase;
+    margin: 0px;
 }
 .company-contacts button{
     
@@ -1073,13 +1093,85 @@ background-color: #f7f3ec;
     margin-bottom: 85px;
 }
 
+/* СЕРВИСЫ  БУДУТ ТУТ*/
 .servises-description{
     display: flex;
-   
-}
-.servises-list{
-    padding: 0px;
+    }
+.servises-item{
+    flex-grow: 1;
 }
 .servises{
     margin-bottom: 80px;
+
+}
+.technomart-info{
+    display: flex;
+    margin: 0px;
+    min-height: 370px;
+    justify-content: space-around;
+}
+.footer-part{
+    display: flex;
+    align-items: center;
+}
+.footer-nav-site,
+.footer-nav-technics{
+   padding: 0%;
+    display: flex;
+    justify-content: space-around;
+    min-width: 570px;
+    
+}
+.footer-end{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-social{
+    display: flex;
+    
+}
+/* CATALOG */
+.info-login{
+    display: flex;
+    
+    min-width: 300px;
+}
+.account-nav{
+    display: flex;
+    
+}
+.breadcrumbs{
+    display: flex;
+    padding-left: 0px;
+    margin: 20px 0px;
+}
+.header-catalog{
+    margin-bottom: 0px;
+}
+.catalog-heading{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.filter-main{
+    display: flex;
+}
+.sorting-part{
+    display: flex;
+    justify-content: flex-end;
+}
+.description-product{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pagination-list{
+    display: flex;
+    margin-bottom: 60px;
+}
+.pre-footer{
+    min-height: 261px;
+  
+}
+.notification{
+    width: 620px;
+    height: 282px;
 }

@@ -243,7 +243,7 @@
         </ul>
 
 
-        <div class="servises-item">
+        <div class="servises-item servises-delivery">
           <h3>Доставка</h3>
 
           <p>Мы с удовольствием доставим ваш товар прямо<br>
@@ -251,10 +251,8 @@
             Ведь мы неплохо заработаем, <br>
             поднимая его на ваш этаж!</p>
         </div>
-        <div class="servises-image">
-          <img src="img/servise/servise-1.png">
-        </div>
-        <div class="servises-item visually-hidden">
+
+        <div class="servises-item servises-guarantee visually-hidden ">
           <h3>Гарантия</h3>
 
           <p>Если купленный у нас товар поломается или заискрит,<br>
@@ -263,9 +261,9 @@
             сгоревший товар на новый.<br>
             Дом уж восстановите как-нибудь сами.</p>
 
-          <img src="img/servise/servise-2.png">
+
         </div>
-        <div class="servises-item visually-hidden">
+        <div class="servises-item servises-credit visually-hidden">
           <h3>Кредит</h3>
 
           <p>Залезть в долговую яму стало проще!<br>
@@ -273,120 +271,125 @@
           <div class="button">
             <a href="#">Отправить заявку</a>
           </div>
-          <img src="img/Servise/servise-3.png">
+
         </div>
       </div>
     </section>
 
-    <section class="company-info">
+    <div class="technomart-info">
+      <section class="company-info">
 
-      <h2>Компания «Техномарт»</h2>
+        <h2>Компания «Техномарт»</h2>
 
-      <p>
-        Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
-        строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-      </p>
-
-      <p>
-        Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-        Техномарт работает со многими транспортными компаниями:
-      </p>
-
-      <ul class="company">
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-
-      <a class="button" href="#">Подробнее о компании</a>
-    </section>
-
-    <section class="company-contacts">
-      <h2>Контакты</h2>
-
-      <p>Вы можете забрать товар сами, <br>
-        заехав в наш офис:</p>
-
-      <p>
-        <img src="img/Map/Map.png">
-      </p>
-
-
-      <button type="button">Заблудились? Напишите нам!</button>
-
-      <form class="contacts-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-        <p class="contacts-item">
-          <label for="contacts-name">Ваше имя:</label>
-          <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        <p>
+          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
         </p>
-        <p class="contacts-item">
-          <label for="contacts-email">Ваш e-mail:</label>
-          <input id="contacts-email" type="text" name="email" value="" placeholder="email@example.com">
-        </p>
-        <p class="contacts-item-text">
-          <label for="contacts-text">Текст письма:</label>
-          <input id="contacts-text" type="text" name="text" value="" placeholder="В свободной форме">
-        </p>
-        <button class="contacts-button" type="submit">Отправить</button>
-        <button class="close" type="button">закрыть</button>
-      </form>
 
-    </section>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          Техномарт работает со многими транспортными компаниями:
+        </p>
 
+        <ul class="company">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+
+        <a class="button" href="#">Подробнее о компании</a>
+      </section>
+
+      <section class="company-contacts">
+        <h2>Контакты</h2>
+
+        <p>Вы можете забрать товар сами, <br>
+          заехав в наш офис:</p>
+
+        <p>
+          <img src="img/Map/Map.png">
+        </p>
+
+
+        <button type="button">Заблудились? Напишите нам!</button>
+
+        <form class="contacts-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contacts-item">
+            <label for="contacts-name">Ваше имя:</label>
+            <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="contacts-item">
+            <label for="contacts-email">Ваш e-mail:</label>
+            <input id="contacts-email" type="text" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="contacts-item-text">
+            <label for="contacts-text">Текст письма:</label>
+            <input id="contacts-text" type="text" name="text" value="" placeholder="В свободной форме">
+          </p>
+          <button class="contacts-button" type="submit">Отправить</button>
+          <button class="close" type="button">закрыть</button>
+        </form>
+
+      </section>
+    </div>
   </main>
 
   <footer>
 
     <div class="footer-navigation">
 
-
-      <a href="index.html">
-        <div class="footer-logo">
-          <img src="img/Logo/logo.png">
+      <div class="container footer-part">
+        <div class="footer-left-part">
+          <a href="index.html">
+            <div class="footer-logo">
+              <img src="img/Logo/logo.png">
+            </div>
+          </a>
+          <p class="footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7 (812) 555-05-55</p>
         </div>
-      </a>
-      <p class="footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        +7 (812) 555-05-55</p>
-      <div class="list-nav">
-        <ul class="footer-nav-site">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <div class="list-nav footer-right-part">
+          <ul class="footer-nav-site">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
 
-        <ul class="footer-nav-technics">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инсрумент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-        </ul>
+          <ul class="footer-nav-technics">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инсрумент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="footer-feedback">
-      <p>
-        (с) 2010-2017 Компания «Техномарт» <br>
-        Все права защищены
-      </p>
+      <div class="footer-feedback">
+        <div class="container footer-end">
+          <p>
+            (с) 2010-2017 Компания «Техномарт» <br>
+            Все права защищены
+          </p>
 
-      <ul class="footer-social">
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-      </ul>
+          <ul class="footer-social">
+            <li><a href="#">Вконтакте</a></li>
+            <li><a href="#">Фейсбук</a></li>
+            <li><a href="#">Инстаграм</a></li>
+          </ul>
 
-      <p>
-        Обратная связь:<br>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
+          <p>
+            Обратная связь:<br>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
 
-      <p>
-        Разработано — <br>
-        <a href="htmlacademy.ru">htmlacademy.ru</a>
-      </p>
-    </div>
+          <p>
+            Разработано — <br>
+            <a href="htmlacademy.ru">htmlacademy.ru</a>
+          </p>
+        </div>
+      </div>
   </footer>
 
 </body>
