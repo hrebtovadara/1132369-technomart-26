@@ -264,7 +264,7 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
 .number{
     border: 3px solid #ffffff;
     width: 270px;
-    min-height: 45px;
+    height: 45px;
     position: relative;
     padding-left: 70px;
     padding-top: 10px;
@@ -302,56 +302,53 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
     font-size: 21px;
     line-height: 21px;
 }
-.sign-in{
+.sign-in a{
     position: relative;
     width: 121px;
     text-align: center;
-    padding-left: 17px;
-    padding-top: 5px;
+    padding-left: 23px;
+    padding-top: 12px;
     min-height: 45px;
 }
-.sign-in::before{
+.sign-in a::before{
     content: " ";
     min-width: 20px;
     height: 17px; 
     position: absolute;
-    top: 12px;
-    left: 18px;
+    top: 14px;
+    left: 15px;
     
 
     background-image: url(../img/icon/icon-login.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-.sign-in:hover,
-.sign-in:focus{
+.sign-in a:hover{
     color: #ee3643;
 }
-.sign-in:active{
+.sign-in a:active{
     color: #c5c5c5;
 }
-.sign-in:hover::before{
+.sign-in a:hover::before{
     background-image: url(../img/icon/icon-login-hover.svg); 
       
 }
-.sign-in:active::before{
+.sign-in a:active::before{
     background-image: url(../img/icon/icon-login-active.svg);      
 }
 
 
-.check-in{
+.check-in a{
     position: relative;
     min-width: 150px;
     text-align: center;
-    padding-left: 17px;
-    padding-top: 5px;
+    padding-top: 12px;
     min-height: 45px;
 }
-.check-in:hover,
-.check-in:focus{
+.check-in a:hover{
     color: #ee3643;
 }
-.check-in:active{
+.check-in a:active{
     color: #c5c5c5;
 }
 
@@ -433,8 +430,7 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
 }
 
 .more-detals a:hover,
-.more-detals a:focus,
-{
+.more-detals a:focus{
     background-color: rgba(5, 0, 0, 0.2);
 }
 .more-detals a:active{
@@ -682,11 +678,11 @@ font-weight: normal;
 /* Производители */
 .manufacturers-list {
     list-style: none;
+    
 }
 .manufacturers-list a{
-    /* display: block; */
+    display: inline-block;
     border: #ebebeb solid 1px;
-    
     width: 220px;
     height: 144px;
    display: flex;
@@ -715,6 +711,15 @@ font-weight: normal;
     background-color: #f4f7f9;
     font-size: 13px;
     line-height: 24px;
+    /* margin-bottom: 80px; */
+  
+}
+.in-servises{
+    max-width: 960px;
+    min-height: 522px;
+    margin: 0px auto;
+    padding-top: 40px;
+    padding-left: 10px;
 }
 .servises h2{
     font-family: "Cuprum", Arial, Helvetica, sans-serif; ;
@@ -723,8 +728,15 @@ font-weight: normal;
     text-transform: uppercase;
     font-weight: normal;
 }
+.servises-description{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+ /* min-width: 710px; */
+}
 .servises-list{
     list-style: none;
+    padding: 0px;
 }
 
 .servises-list button{
@@ -737,7 +749,10 @@ font-weight: normal;
     border-bottom: #293449 solid 1px;
     border-top: #405069 solid 1px;
     width: 240px;
-    height: 62px;
+    height: 61px;
+    text-align: left;
+    padding-left: 20px;
+  
 }
 .servises-list button:hover,
 .servises-list button:focus{
@@ -750,6 +765,13 @@ font-weight: normal;
     background-color: #ffffff;
     border: #e5e5e5 solid 1px;
 }
+.servises-item{
+    flex-grow: 1;
+  
+   margin-left: 80px;
+   margin-top: 10px;
+}
+
 .servises-item h3{
     font-family: "Cuprum", Arial, Helvetica, sans-serif; 
     font-size: 36px;
@@ -757,20 +779,30 @@ font-weight: normal;
     font-weight: normal;
     text-transform: uppercase;
     color: #32425c;
+    margin: 0;
+}
+.servises-item p{
+    margin-top: 22px;
+    margin-bottom: 27px;
 }
 .servises-delivery{
-background-image: url(../img/servise/servise-1.png);
-background-repeat: no-repeat;
+    background-image: url(../img/servise/servise-3.png);
+    background-repeat: no-repeat;
+    background-position: 150px 22px;
 }
 .servises-guarantee{
     background-image: url(../img/servise/servise-2.png);
     background-repeat: no-repeat;
-
+    background-position: 240px 0px;
 }
 .servises-credit{
-    background-image: url(../img/servise/servise-3.png);
+    background-image: url(../img/servise/servise-1.png);
     background-repeat: no-repeat;
-
+    background-position: 165px 0px;
+}
+.servises-credit a{
+    display: inline-block;
+    margin: 0 45px;
 }
 
 /* Компания ТЕХНОМАРТ */
@@ -786,22 +818,49 @@ background-repeat: no-repeat;
     font-weight: normal;
     text-transform: uppercase;
     margin: 0px;
+    margin-bottom: 25px;
+}
+.company-info p{
+    margin-bottom: 23px;
 }
 .company li{
     list-style: none;
+    margin-bottom: 20px;
+    padding-left: 37px;
+    position: relative;
 }
 .company li::before{
-    content: url("../img/icon/marker.svg");
-    
+    content: " ";
+    position: absolute;
+   top: 8px;
+    left: 0px;
+   width: 25px;
+   height: 2px;
+
+    background-color: #ee3643;
+    background-repeat: no-repeat;
+   
 }
 .company{
     font-family: "Cuprum", Arial, Helvetica, sans-serif; 
     font-size: 18px;
     line-height: 20px;
-  
+    padding: 0%;
+    
+}
+.company-info a{
+    margin-top: 16px;
+    padding: 10px 40px;
 }
 /* Контакты */
-
+.company-contacts{
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+}
+.company-contacts p{
+    margin-bottom: 30px;
+}
 .company-contacts h2{
     font-family: "Cuprum", Arial, Helvetica, sans-serif; 
     font-size: 30px;
@@ -809,8 +868,9 @@ background-repeat: no-repeat;
     font-weight: normal;
     text-transform: uppercase;
     margin: 0px;
+    margin-bottom: 26px;
 }
-.company-contacts button{
+.company-contacts a{
     
     border: none;
     color: #ffffff;
@@ -823,6 +883,8 @@ background-repeat: no-repeat;
     vertical-align: middle;
     border-radius: 5px;
     text-transform: uppercase;
+    padding: 10px 62px;
+    
 }
 
 /* попап */
@@ -861,15 +923,21 @@ background-repeat: no-repeat;
 .footer-navigation{
     background-color: #32425c;
   }
-
+.footer-part{
+    min-height: 193px;
+}
 .footer-logo{
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
-    height: 63px;
+    height: 68px;
     display: block;
     width: 220px;
     text-align: center;
+    margin-top: 0;
     
+}
+.footer-logo img{
+    padding-top: 20px;
     
 }
 .footer-logo:hover {
@@ -880,16 +948,23 @@ background-repeat: no-repeat;
     background-color: #ba2732;
     border-bottom: 5px solid #8e1e26;
 }  
+.footer-address{
+    margin-top: 28px;
+    margin-left: 4px;
+}
 .list-nav ul{
     list-style: none;
+   
 }
+
 .footer-nav-technics{
     color: #ffd180;
 }
-.list-nav li:hover{
+.list-nav a:hover,
+.list-nav a:focus{
     text-decoration-line: underline;
 }
-.list-nav li:active{
+.list-nav a:active{
     opacity: 0.3;
     text-decoration-line: none;
 }
@@ -897,15 +972,27 @@ background-repeat: no-repeat;
 
 .footer-feedback{
     background-color: #293449;
-    font-size: 18px;
-    line-height: 24px;
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 16px;
+    line-height: 18px;
 }
 .footer-feedback a{
     color: #ffd180;
 }
 .footer-social{
     list-style: none;
-
+    display: flex;
+    
+}
+.social-button{
+    background-color: #212a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin: 1px;
 }
 /* CATALOG --------------------------------------------------------------------------------------------------------------------------------------------*/
 .breadcrumbs{
@@ -1172,7 +1259,7 @@ background-color: #f7f3ec;
     line-height: 24px;
 }
 .pre-footer  h2{
-    font-'f'amily: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -1217,11 +1304,35 @@ background-color: #f7f3ec;
     justify-content: space-between;
     align-items: center;
     min-height: 158px;
-    
+    max-width: 940px;
     padding: 0;
     /* padding-top: 46px; */
-    max-width: 940px;
     
+    
+}
+.info-description{
+    
+    padding-left: 52px;
+    padding-top: 10px;
+}
+.info-contacts{
+    padding-left: 56px;
+    padding-top: 8px;
+}
+   
+.info-contacts p{
+    
+    font-family: "Cuprum", Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+    padding-left: 9px;
+    
+}
+.info-private{
+    align-self: flex-start;
+    padding-top: 46px;
+    padding-right: 0px;
 }
 .info-enter{
     display: flex;
@@ -1230,7 +1341,7 @@ background-color: #f7f3ec;
     
 }
 .info-enter li{
-    margin: 0 5px;
+    margin-left: 10px;
 }
 .info-enter a{
     display: inline-block;
@@ -1306,41 +1417,44 @@ background-color: #f7f3ec;
 }
 
 /* СЕРВИСЫ  БУДУТ ТУТ*/
-.servises-description{
-    display: flex;
-    }
-.servises-item{
-    flex-grow: 1;
-}
-.servises{
-    margin-bottom: 80px;
 
-}
 .technomart-info{
     display: flex;
-    margin: 0px;
-    min-height: 370px;
-    justify-content: space-around;
+    min-height: 536px;
+    justify-content: space-between;
+    padding: 80px 10px;
 }
 .footer-part{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
-.footer-nav-site,
-.footer-nav-technics{
-   padding: 0%;
+.footer-nav-site{
+   padding-top: 20px;
     display: flex;
-    justify-content: space-around;
-    min-width: 570px;
-    
+    justify-content: space-between;
+    min-width: 586px;
+}
+.footer-nav-technics{
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 540px;
+    margin-left: 22px; 
 }
 .footer-end{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 107px;
 }
-.footer-social{
-    display: flex;
-    
+.copyright{
+    min-width: 295px;
+}
+.site-academy{
+    margin-right: 14px;
+}
+.mail-to-academy{
+    padding-left: 60px;
 }
 /* CATALOG */
 .info-login{
