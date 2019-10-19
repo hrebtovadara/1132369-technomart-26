@@ -6,6 +6,7 @@
   <title>HTML Academy: Техномарт</title>
   <link href="css/nomalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -74,6 +75,7 @@
         <h2 class="visually-hidden">Каталог предложений</h2>
         <div class="catalog-part-one">
           <div class="box materials">
+            <div class="flag flag-new">Новинка!</div>
             <p>Материалы</p>
             <div class="more-detals"><a href="#">На любой вкус</a></div>
           </div>
@@ -147,15 +149,15 @@
         </div>
 
         <ul class="description-product">
-          <li>
-            <h3>
-              <a href="#">
-                Перфоратор BOSCH <br>
-                BFG 9000
-              </a>
-            </h3>
-            <a href="#"><img src="img/perforator/perforator_1.jpg"></a>
-            <div class="button-buy visually-hidden">
+          <li class="catalog-item">
+            <div class="title">
+              Перфоратор BOSCH <br>
+              BFG 9000
+            </div>
+
+            <div class="image"><img src="img/perforator/perforator_2.jpg"></div>
+
+            <div class="button-buy">
               <a class="buy-now" href="#">Купить</a>
               <a class="buy-later" href="#">В закладки</a>
             </div>
@@ -167,15 +169,15 @@
             </div>
           </li>
 
-          <li>
-            <h3>
-              <a href="#">
-                Перфоратор BOSCH <br>
-                BFG 3000
-              </a>
-            </h3>
-            <a href="#"><img src="img/perforator/perforator_2.jpg"></a>
-            <div class="button-buy visually-hidden">
+          <li class="catalog-item">
+
+            <div class="title">
+              Перфоратор BOSCH <br>
+              BFG 3000
+            </div>
+
+            <div class="image"><img src="img/perforator/perforator_2.jpg"></div>
+            <div class="button-buy">
               <a class="buy-now" href="#">Купить</a>
               <a class="buy-later" href="#">В закладки</a>
             </div>
@@ -187,15 +189,15 @@
             </div>
           </li>
 
-          <li>
-            <h3>
-              <a href="#">
-                Перфоратор BOSCH <br>
-                BFG 6000
-              </a>
-            </h3>
-            <a href="#"><img src="img/perforator/perforator_3.jpg"></a>
-            <div class="button-buy visually-hidden">
+          <li class="catalog-item">
+
+            <div class="title">
+              Перфоратор BOSCH <br>
+              BFG 6000
+            </div>
+
+            <div class="image"><img src="img/perforator/perforator_3.jpg"></div>
+            <div class="button-buy">
               <a class="buy-now" href="#">Купить</a>
               <a class="buy-later" href="#">В закладки</a>
             </div>
@@ -207,15 +209,15 @@
             </div>
           </li>
 
-          <li>
-            <h3>
-              <a href="#">
-                Перфоратор BOSCH <br>
-                BFG 2000
-              </a>
-            </h3>
-            <a href="#"><img src="img/perforator/perforator_2.jpg"></a>
-            <div class="button-buy visually-hidden">
+          <li class="catalog-item">
+
+            <div class="title">
+              Перфоратор BOSCH <br>
+              BFG 2000
+            </div>
+            <div class="flag flag-new">Новинка!</div>
+            <div class="image"><img src="img/perforator/perforator_2.jpg"></div>
+            <div class="button-buy">
               <a class="buy-now" href="#">Купить</a>
               <a class="buy-later" href="#">В закладки</a>
             </div>
@@ -263,9 +265,11 @@
             <li><button type="button">Гарантия</button></li>
             <li><button type="button">Кредит</button></li>
           </ul>
+          <div class="shadow">
+            <img src="img/shadow.png">
+          </div>
 
-
-          <div class="servises-item servises-delivery visually-hidden">
+          <div class="servises-item servises-delivery">
             <h3>Доставка</h3>
 
             <p>Мы с удовольствием доставим ваш товар прямо<br>
@@ -285,7 +289,7 @@
 
 
           </div>
-          <div class="servises-item servises-credit ">
+          <div class="servises-item servises-credit visually-hidden">
             <h3>Кредит</h3>
 
             <p>Залезть в долговую яму стало проще!<br>
@@ -323,35 +327,59 @@
       </section>
 
       <section class="company-contacts">
-        <h2>Контакты</h2>
+        <div class="contacts-map">
+          <h2>Контакты</h2>
 
-        <p>Вы можете забрать товар сами, <br>
-          заехав в наш офис:</p>
+          <p>Вы можете забрать товар сами, <br>
+            заехав в наш офис:</p>
 
-        <p>
-          <img src="img/Map/Map.png">
-        </p>
+          <p>
+            <img src="img/Map/Map.png">
+          </p>
 
 
-        <a class="button">Заблудились? Напишите нам!</a>
-
+          <a class="button">Заблудились? Напишите нам!</a>
+        </div>
         <form class="contacts-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-          <p class="contacts-item">
-            <label for="contacts-name">Ваше имя:</label>
-            <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p class="contacts-item">
-            <label for="contacts-email">Ваш e-mail:</label>
-            <input id="contacts-email" type="text" name="email" value="" placeholder="email@example.com">
-          </p>
-          <p class="contacts-item-text">
-            <label for="contacts-text">Текст письма:</label>
-            <input id="contacts-text" type="text" name="text" value="" placeholder="В свободной форме">
-          </p>
-          <button class="contacts-button" type="submit">Отправить</button>
-          <button class="close" type="button">закрыть</button>
+          <div class="contacts-input">
+            <p class="contacts-item">
+              <label for="contacts-name">Ваше имя:</label>
+              <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p class="contacts-item">
+              <label for="contacts-email">Ваш e-mail:</label>
+              <input id="contacts-email" type="text" name="email" value="" placeholder="email@example.com">
+            </p>
+            <p class="contacts-item-text">
+              <label for="contacts-text">Текст письма:</label>
+              <input id="contacts-text" type="text" name="text" value="" placeholder="В свободной форме">
+            </p>
+          </div>
+          <button class="contacts-button button" type="submit">Отправить</button>
+          <button class="close" type="button"><span class="visually-hidden">Закрыть</span>
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21"
+              width="21">
+              <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 
+              0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 
+              7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 
+              7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643" /></svg>
+          </button>
         </form>
 
+      </section>
+      <section class="main-map visually-hidden">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <p>
+            <img src="img/map/main-map.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </p>
+          <button class="close close-map" type="button"><span class="visually-hidden">Закрыть</span>
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21"
+              width="21">
+              <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 
+              0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 
+              7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 
+              7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643" /></svg>
+          </button>
       </section>
     </div>
   </main>
@@ -382,7 +410,7 @@
           <ul class="footer-nav-technics">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
-            <li><a href="#">Инсрумент</a></li>
+            <li><a href="#">Инструмент</a></li>
             <li><a href="#">Спецпредложения</a></li>
           </ul>
         </div>
