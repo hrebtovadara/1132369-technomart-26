@@ -103,34 +103,8 @@ html{
     background-color: #ba2732;
     border-bottom: 5px solid #8e1e26;
 }
-/* Окно поиска */
-/* .header-search{
-    background-image: url(../img/icon/icon-search.svg);
-    background-repeat: no-repeat;
-    background-color: #293449;
-    border: none;
-    font-family: "Cuprum", Arial, sans-serif; 
-    font-size: 17px;
-    line-height: 18px;
-    padding-left:37px;
-    width: 270px;
-    height: 42px;
-   
-}
-.header-search:hover
-{
-    background-image: url(../img/icon/icon-search-hover.svg);
-    background-repeat: no-repeat;
-    background-color: #212a3a;
-}
-.header-search:focus,
-.header-search:active{
-    background-image: url(../img/icon/icon-search-active.svg);
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    color: #000000;
-    
-} */
+
+
 
 .header-search{
     background-color: #293449;
@@ -163,7 +137,7 @@ html{
     background-position: 12px 12px;
     
 }
-input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я нашла в инете, т.к. сама как изменить цвет placeholder я не придумала */
+input[type="search"]::placeholder { color: #ffffff; } 
 
 /* Закладки, Корзина, Оформить заказ */
 
@@ -301,6 +275,9 @@ input[type="search"]::placeholder { color: #ffffff; } /*Этот фикс я н�
     padding-top: 8px;
     
 }
+.header-main:not(.header-catalog) .info-contacts {
+    padding-left: 54px;
+    }
 .info-contacts p{
     margin: 0 auto;
 
@@ -780,7 +757,7 @@ font-weight: normal;
     border: none;
 }
 .manufacturers-list li:active{
-    box-shadow: 0 4px 10px rgba(41,52,73,0.5);       /* здесь нужно проверить opacity при наведении и нажатии. */
+    box-shadow: 0 4px 10px rgba(41,52,73,0.5);       
     border: none;
     
 }
@@ -836,6 +813,7 @@ font-weight: normal;
     font-weight: bold;
     color: #ffffff;
     background-color: #32425c;
+    border: 0;
     border-bottom: #293449 solid 1px;
     border-top: #405069 solid 1px;
     width: 240px;
@@ -975,6 +953,8 @@ font-weight: normal;
     border-radius: 5px;
     text-transform: uppercase;
     padding: 10px 62px;
+
+    margin-top: 3px
     
 }
 
@@ -1541,9 +1521,11 @@ input[type="radio"] {
     color: #ee3643;
     text-decoration: none;
 }
-
-
-
+.sorting-part a.active{
+    color: #ee3643;
+    text-decoration: none;
+    
+}
 .arrow{
     border: none;
     background-color: transparent;
@@ -1555,6 +1537,9 @@ input[type="radio"] {
     fill: #231f20;
 }
 .arrow:active polygon{
+    fill: #ee3643;
+}
+.active polygon{
     fill: #ee3643;
 }
 .show{
@@ -1570,6 +1555,7 @@ input[type="radio"] {
     margin-top: 60px;
     padding: 9px 38px;
    }
+
 /* Страницы */
 .pagination-list{
     list-style: none;
