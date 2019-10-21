@@ -1648,9 +1648,12 @@ input[type="radio"] {
     width: 620px;
     height: 282px;
     background-color: #ffffff;
-    position: absolute;
-    top: -1280px;
-    left: 170px;
+    position: fixed;
+    top: 120px;
+    margin: auto;
+    left:0;
+    right:0;
+    z-index: 100;
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
     
     
