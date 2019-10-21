@@ -6,10 +6,13 @@
   <title>HTML Academy: Техномарт</title>
   <link href="css/nomalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
+    rel="stylesheet">
 </head>
 
 <body>
+ 
   <header class="header-main">
 
     <h1 class="visually-hidden">
@@ -338,7 +341,7 @@
           </p>
 
 
-          <a class="button">Заблудились? Напишите нам!</a>
+          <a class="button write-us">Заблудились? Напишите нам!</a>
         </div>
         <form class="contacts-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
           <div class="contacts-input">
@@ -356,7 +359,7 @@
             </p>
           </div>
           <button class="contacts-button button" type="submit">Отправить</button>
-          <button class="close" type="button"><span class="visually-hidden">Закрыть</span>
+          <button class="close close-writeus" type="button"><span class="visually-hidden">Закрыть</span>
             <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21"
               width="21">
               <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 
@@ -368,18 +371,19 @@
 
       </section>
       <section class="main-map visually-hidden">
-          <h2 class="visually-hidden">Как до нас добраться</h2>
-          <p>
-            <img src="img/map/main-map.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          </p>
-          <button class="close close-map" type="button"><span class="visually-hidden">Закрыть</span>
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21"
-              width="21">
-              <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+          <img src="img/map/main-map.png" width="940" height="446"
+            alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="close close-map" type="button"><span class="visually-hidden">Закрыть</span>
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21"
+            width="21">
+            <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 
               0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 
               7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 
               7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643" /></svg>
-          </button>
+        </button>
       </section>
     </div>
   </main>
@@ -468,6 +472,9 @@
       </div>
   </footer>
 
+
+  <script src="js/writeUsPopup.js"></script>
+  
 </body>
 
 </html>

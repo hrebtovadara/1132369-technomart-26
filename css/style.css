@@ -29,6 +29,7 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+    
   }
 .button{
     color: #ffffff;
@@ -44,6 +45,7 @@ img {
     border-radius: 3px;
     text-transform: uppercase;
 }
+
 .button:hover,
 .button:focus {
     background-color: #ca2c37;
@@ -968,8 +970,10 @@ font-weight: normal;
     top: 125px;
     right: 160px;
     background-color: #f4f4f4;
+    
  
 }
+
 .contacts-input{
     display: flex;
     flex-wrap: wrap;
@@ -1894,9 +1898,52 @@ input[type="radio"] {
     justify-content: space-between;
 }
 
-/* Переместить */
+/* animation */
 
+@keyframes bounce {
+    0% {
+      transform: translateY(300px);
+    }
+  
+    70% {
+      transform: translateY(-30px);
+    }
+  
+    90% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
 
+.animation{
+    animation: bounce 0.6s;
+}
 
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
 
-
+.modal-error {
+    animation: shake 0.6s;
+}
