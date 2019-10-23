@@ -69,4 +69,35 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
+// 
 
+var buttonDelivery = document.querySelector(".button-delivery");
+var buttonGuarantee = document.querySelector(".button-guarantee");
+var buttonCredit = document.querySelector(".button-credit");
+
+var servisesDelivery = document.querySelector(".servises-delivery");
+var servisesGuarantee = document.querySelector(".servises-guarantee");
+var servisesCredit = document.querySelector(".servises-credit");
+
+
+buttonDelivery.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    servisesDelivery.classList.remove("visually-hidden");
+    servisesGuarantee.classList.add("visually-hidden");
+    servisesCredit.classList.add("visually-hidden");
+});
+
+buttonGuarantee.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    servisesDelivery.classList.add("visually-hidden");
+    servisesGuarantee.classList.remove("visually-hidden");
+    servisesCredit.classList.add("visually-hidden");
+});
+
+buttonCredit.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    servisesDelivery.classList.add("visually-hidden");
+    servisesGuarantee.classList.add("visually-hidden");
+    servisesCredit.classList.remove("visually-hidden");
+});

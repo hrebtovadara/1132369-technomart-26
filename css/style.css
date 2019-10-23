@@ -483,6 +483,7 @@ input[type="search"]::placeholder { color: #ffffff; }
 .catalog-drill{
     height: 266px;
     background-image: url(../img/slider/slider-1.jpg);
+    position: relative;
     
 }
 .catalog-perforator{
@@ -797,6 +798,7 @@ font-weight: normal;
  /* min-width: 710px; */
  position: relative;
 }
+
 .shadow{
     position: absolute;
     top: -25px;
@@ -824,13 +826,20 @@ font-weight: normal;
     padding-left: 20px;
   
 }
-.servises-list button:hover,
-.servises-list button:focus{
+
+.servises-list .servise-active{
+    color: #32425c;
+    background-color: #ffffff;
+    border: #e5e5e5 solid 1px;
+}
+.servises-list button:hover
+{
     background-color: #293449;
     border-bottom: none;
     border-top: #405069 solid 1px;
 }
-.servises-list button:active{
+.servises-list button:active,
+.servises-list button:focus{
     color: #32425c;
     background-color: #ffffff;
     border: #e5e5e5 solid 1px;
@@ -1521,26 +1530,25 @@ input[type="radio"] {
     text-decoration: underline solid #ee3643;
 
 }
-.sorting-part a:active{
+.sorting-part a:active,
+.sorting-part a:focus
+{
     color: #ee3643;
     text-decoration: none;
 }
-.sorting-part a.active{
-    color: #ee3643;
-    text-decoration: none;
-    
-}
+
 .arrow{
     border: none;
     background-color: transparent;
     padding: 0px;
     
 }
-.arrow:hover polygon,
-.arrow:focus polygon{
+.arrow:hover polygon
+{
     fill: #231f20;
 }
-.arrow:active polygon{
+.arrow:active polygon,
+.arrow:focus polygon{
     fill: #ee3643;
 }
 .active polygon{
@@ -1649,12 +1657,13 @@ input[type="radio"] {
     height: 282px;
     background-color: #ffffff;
     position: fixed;
-    top: 120px;
+    top: 0;
+    bottom: 0;
     margin: auto;
     left:0;
     right:0;
     z-index: 100;
-    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.75);
     
     
 }
@@ -1949,4 +1958,12 @@ input[type="radio"] {
 
 .modal-error {
     animation: shake 0.6s;
+}
+
+.drill-slider{
+    
+    border: none;
+    position: absolute;
+top:80px;
+transform: rotate(90deg)
 }

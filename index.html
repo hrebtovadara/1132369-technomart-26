@@ -12,7 +12,7 @@
 </head>
 
 <body>
- 
+
   <header class="header-main">
 
     <h1 class="visually-hidden">
@@ -117,6 +117,21 @@
               <span class="tool-name">Дрели</span><br>
               <span class="tool-comment">Соседям на радость!</span>
               <a class="button" href="№">Открыть каталог</a>
+              <fieldset class="drill-slider">
+                  <legend class="visually-hidden">Питание:</legend>
+                  <ul>
+                      <li>
+                          <input class="drill-radio" type="radio" name="drill-group"
+                              value="drill" id="drill-power" checked>
+                          <label for="drill-power" class="visually-hidden">Дрели</label>
+                      </li>
+                      <li>
+                          <input class="perforator-radio" type="radio" name="drill-group"
+                              value="perforator" id="perforator-power">
+                          <label for="erforator-power" class="visually-hidden">Перфораторы</label>
+                      </li>
+                  </ul>
+              </fieldset>
             </div>
 
             <div class="catalog-perforator visually-hidden">
@@ -264,9 +279,9 @@
         </p>
         <div class="servises-description">
           <ul class="servises-list">
-            <li><button type="button">Доставка</button></li>
-            <li><button type="button">Гарантия</button></li>
-            <li><button type="button">Кредит</button></li>
+            <li><button type="button" class="button-delivery">Доставка</button></li>
+            <li><button type="button" class="button-guarantee">Гарантия</button></li>
+            <li><button type="button" class="button-credit">Кредит</button> </li>
           </ul>
           <div class="shadow">
             <img src="img/shadow.png">
@@ -337,7 +352,7 @@
             заехав в наш офис:</p>
 
           <p>
-              <a class="map-image" href="#"><img src="img/Map/Map.png"></a>
+            <a class="map-image" href="#"><img src="img/Map/Map.png"></a>
           </p>
 
 
@@ -368,11 +383,30 @@
               7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643" /></svg>
           </button>
         </form>
+        <div class="notification visually-hidden">
+        <p class="image-notification">Товар добавлен в корзину!</p>
+        <div class="bottom-button">
+            <a href="#" class="button button-notification">Оформить заказ</a>
+            <button class="button-shop" type="button">Продолжить покупки</button>
 
+        </div>
+        <button class="close close-cart" type="button"><span class="visually-hidden">Закрыть</span>
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 21 21" height="21"
+                viewBox="0 0 21 21" width="21">
+                <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 
+                      0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 
+                      7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 
+                      7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
+                    fill="#ee3643" />
+            </svg>
+        </button>
+
+    </div>
       </section>
       <section class="main-map visually-hidden">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CGDONK2f" width="940" height="446" frameborder="0" allowfullscreen="true"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGDONK2f" width="940" height="446" frameborder="0"
+          allowfullscreen="true"></iframe>
         <!-- <p>
           <img src="img/map/main-map.png" width="940" height="446"
             alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -473,10 +507,10 @@
       </div>
   </footer>
 
-
+  <script src="js/cartAdd.js"></script>
   <script src="js/writeUsPopup.js"></script>
   <script src="js/map.js"></script>
-  
+
 </body>
 
 </html>
