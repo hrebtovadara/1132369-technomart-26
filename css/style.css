@@ -474,6 +474,7 @@ input[type="search"]::placeholder { color: #ffffff; }
     position: absolute;
     top: 115px;
     left: 25px;
+   
 }
 .icon-right{
     position: absolute;
@@ -1965,5 +1966,44 @@ input[type="radio"] {
     border: none;
     position: absolute;
 top:80px;
-transform: rotate(90deg)
+
+}
+.drill-style{
+    list-style: none;
+    
+}
+.drill-slider label{
+    font-size: 0;
+    margin-right: 10px;
+}
+
+.drill-radio + label::before{
+    content: " ";
+    position: absolute;
+    left: 293px;
+    top: 140px;
+ 
+    width: 10px;
+    height: 10px;
+
+    
+    border-radius: 50px;
+    background-color: #ee3643;
+    border: 2px solid #ffffff;
+}
+.perforator-radio + label::before{
+    content: " ";
+    position: absolute;
+    left: 313px;
+    top: 140px;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #ee3643;
+    border: 2px solid #ffffff;
+}
+.radio-none + label::before{
+    border: none;
+    background-color: #ffffff;
 }
