@@ -35,9 +35,9 @@ link.addEventListener("click", function (evt) {
     //                 emailField.focus();
     //               }
     //   } else {
-        nameField.focus();
+    nameField.focus();
     //   }
-    
+
 });
 
 close.addEventListener("click", function (evt) {
@@ -61,14 +61,14 @@ form.addEventListener("submit", function (evt) {
 });
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (writeUsPopup.classList.add("visually-hidden")) {
-        writeUsPopup.classList.remove("visually-hidden");
-        writeUsPopup.classList.remove("animation");
-        writeUsPopup.classList.remove("modal-error");
-      }
+        evt.preventDefault();
+        if (writeUsPopup.classList.add("visually-hidden")) {
+            writeUsPopup.classList.remove("visually-hidden");
+            writeUsPopup.classList.remove("animation");
+            writeUsPopup.classList.remove("modal-error");
+        }
     }
-  });
+});
 // 
 
 var buttonDelivery = document.querySelector(".button-delivery");
@@ -101,3 +101,44 @@ buttonCredit.addEventListener("click", function (evt) {
     servisesGuarantee.classList.add("visually-hidden");
     servisesCredit.classList.remove("visually-hidden");
 });
+
+var iconLeft = document.querySelector(".icon-left");
+var iconRigth = document.querySelector(".icon-right");
+var radioOne = document.querySelector("[id=perforator-power]");
+var radioTwo = document.querySelector("[id=drill-power]");
+var sliderOne = document.querySelector(".catalog-drill");
+var sliderTwo = document.querySelector(".catalog-perforator");
+
+iconRigth.addEventListener("click", changeSlide);
+iconLeft.addEventListener("click", changeSlide);
+radioOne.addEventListener("click", showFirstSlide);
+radioTwo.addEventListener("click", showSecondSlide);
+
+
+function changeSlide(evt) {
+    evt.preventDefault();
+    if (sliderOne.classList.contains("visually-hidden")) {
+        showFirstSlide();
+    } else {
+        showSecondSlide();
+    }
+}
+
+function showFirstSlide() {
+    sliderOne.classList.remove("visually-hidden");
+    sliderOne.classList.add("slider-catalog");
+
+    sliderTwo.classList.add("visually-hidden");
+    sliderTwo.classList.remove("slider-catalog");
+
+}
+
+function showSecondSlide() {
+    sliderOne.classList.add("visually-hidden");
+    sliderOne.classList.remove("slider-catalog");
+
+    sliderTwo.classList.remove("visually-hidden");
+    sliderTwo.classList.add("slider-catalog");
+}
+
+

@@ -472,24 +472,34 @@ input[type="search"]::placeholder { color: #ffffff; }
 }
 .icon-left{
     position: absolute;
-    top: 115px;
-    left: 25px;
-   
+    top: 112px;
+    left: 20px;
+    z-index: 2;
+    border: none;
+    background-color: transparent;
 }
 .icon-right{
     position: absolute;
-    top: 115px;
-    left: 578px;
+    top: 112px;
+    left: 570px;
+    z-index: 1;
+    border: none;
+    background-color: transparent;
 }
+
 .catalog-drill{
-    height: 266px;
+ 
     background-image: url(../img/slider/slider-1.jpg);
+    
     position: relative;
     
 }
 .catalog-perforator{
-    height: 266px;
+   
     background-image: url(../img/slider/slider-2.jpg);
+}
+.slider-catalog{
+    height: 266px;
 }
 .tool-name{
     font-family: "Cuprum", Arial, Helvetica, sans-serif; 
@@ -1965,45 +1975,42 @@ input[type="radio"] {
     
     border: none;
     position: absolute;
-top:80px;
+    top:80px;
+    z-index: 1;
 
 }
 .drill-style{
     list-style: none;
+    transform: rotate(90deg);
+}
+.drill-style label{
+    font-size: 0;
+    position: relative;
     
 }
-.drill-slider label{
-    font-size: 0;
-    margin-right: 10px;
-}
-
-.drill-radio + label::before{
+.drill-radio-input + label::before{
     content: " ";
     position: absolute;
-    left: 293px;
-    top: 140px;
+    left: 80px;
+    top: -285px;
  
     width: 10px;
     height: 10px;
 
     
     border-radius: 50px;
-    background-color: #ee3643;
-    border: 2px solid #ffffff;
+    background-color: #ffffff;
 }
-.perforator-radio + label::before{
+.drill-radio-input:checked + label::after{
     content: " ";
     position: absolute;
-    left: 313px;
-    top: 140px;
+    left: 82px;
+    top: -283px;
+ 
+    width: 6px;
+    height: 6px;
 
-    width: 10px;
-    height: 10px;
+    
     border-radius: 50px;
     background-color: #ee3643;
-    border: 2px solid #ffffff;
-}
-.radio-none + label::before{
-    border: none;
-    background-color: #ffffff;
 }

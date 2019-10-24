@@ -95,14 +95,14 @@
         </div>
         <div class="catalog-part-two">
           <div class="catalog-main">
-            <div class="icon-left">
+            <button class="icon-left" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                 id="Layer_1" x="0px" y="0px" width="22px" height="40px" viewBox="0 0 22 40"
                 enable-background="new 0 0 22 40" xml:space="preserve">
                 <polygon fill="#FFFFFF"
                   points="19.83,-0.035 21.919,2.064 4.13,19.947 21.977,37.886 19.887,39.985 -0.048,19.947 " /></svg>
-            </div>
-            <div class="icon-right">
+            </button>
+            <button class="icon-right" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
                 y="0px" width="22px" height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40"
                 xml:space="preserve">
@@ -112,34 +112,35 @@
                     points="2.098,-0.035 0.009,2.064 17.798,19.947 -0.048,37.886 2.041,39.985 21.976,19.947  " />
                 </g>
               </svg>
-            </div>
-            <div class="catalog-drill">
-              <span class="tool-name">Дрели</span><br>
-              <span class="tool-comment">Соседям на радость!</span>
-              <a class="button" href="№">Открыть каталог</a>
-              <fieldset class="drill-slider">
-                  <legend class="visually-hidden">Питание:</legend>
-                  <ul class="drill-style">
-                      <li>
-                          <input class="drill-radio" type="radio" name="drill-group"
-                              value="drill" id="drill-power" checked>
-                          <label for="drill-power">Дрели</label>
-                      </li>
-                      <li>
-                          <input class="perforator-radio" type="radio" name="drill-group"
-                              value="perforator" id="perforator-power">
-                          <label for="erforator-power">Перфораторы</label>
-                      </li>
-                  </ul>
-              </fieldset>
-            </div>
+            </button>
+            <fieldset class="drill-slider">
+              <legend class="visually-hidden">Питание:</legend>
+              <ul class="drill-style">
+                <li>
+                  <input class="drill-radio drill-radio-input" type="radio" name="drill-group" value="drill"
+                    id="drill-power">
+                  <label for="drill-power">Дрели</label>
+                </li>
+                <li>
+                  <input class="perforator-radio drill-radio-input" type="radio" name="drill-group" value="perforator"
+                    id="perforator-power">
+                  <label for="perforator-power">Перфораторы</label>
+                </li>
+              </ul>
+            </fieldset>
+            
+              <div class="slider-catalog catalog-drill">
+                <span class="tool-name">Дрели</span><br>
+                <span class="tool-comment">Соседям на радость!</span>
+                <a class="button" href="№">Открыть каталог</a>
+              </div>
 
-            <div class="catalog-perforator visually-hidden">
-              <span class="tool-name">Перфораторы</span><br>
-              <span class="tool-comment">Настоящие мужские игрушки</span>
-              <a class="button" href="№">Открыть каталог</a>
-
-            </div>
+              <div class="slider-catalog catalog-perforator visually-hidden">
+                <span class="tool-name">Перфораторы</span><br>
+                <span class="tool-comment">Настоящие мужские игрушки</span>
+                <a class="button" href="№">Открыть каталог</a>
+              </div>
+            
           </div>
         </div>
         <div class="catalog-part-three">
@@ -173,7 +174,7 @@
               BFG 9000
             </div>
 
-            <div class="image"><img src="img/perforator/perforator_2.jpg"></div>
+            <div class="image"><img src="img/perforator/perforator_1.jpg"></div>
 
             <div class="button-buy">
               <a class="buy-now" href="#">Купить</a>
@@ -384,24 +385,23 @@
           </button>
         </form>
         <div class="notification visually-hidden">
-        <p class="image-notification">Товар добавлен в корзину!</p>
-        <div class="bottom-button">
+          <p class="image-notification">Товар добавлен в корзину!</p>
+          <div class="bottom-button">
             <a href="#" class="button button-notification">Оформить заказ</a>
             <button class="button-shop" type="button">Продолжить покупки</button>
 
-        </div>
-        <button class="close close-cart" type="button"><span class="visually-hidden">Закрыть</span>
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 21 21" height="21"
-                viewBox="0 0 21 21" width="21">
-                <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 
+          </div>
+          <button class="close close-cart" type="button"><span class="visually-hidden">Закрыть</span>
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21"
+              width="21">
+              <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 
                       0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 
                       7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 
-                      7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
-                    fill="#ee3643" />
+                      7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643" />
             </svg>
-        </button>
+          </button>
 
-    </div>
+        </div>
       </section>
       <section class="main-map visually-hidden">
         <h2 class="visually-hidden">Как до нас добраться</h2>
