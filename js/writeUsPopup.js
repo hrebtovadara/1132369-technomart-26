@@ -69,7 +69,7 @@ window.addEventListener("keydown", function (evt) {
         }
     }
 });
-// 
+
 
 var buttonDelivery = document.querySelector(".button-delivery");
 var buttonGuarantee = document.querySelector(".button-guarantee");
@@ -131,6 +131,8 @@ function showFirstSlide() {
     sliderTwo.classList.add("visually-hidden");
     sliderTwo.classList.remove("slider-catalog");
 
+    radioTwo.checked = false;
+    radioOne.checked = true;
 }
 
 function showSecondSlide() {
@@ -139,6 +141,61 @@ function showSecondSlide() {
 
     sliderTwo.classList.remove("visually-hidden");
     sliderTwo.classList.add("slider-catalog");
+
+    radioTwo.checked = true;
+    radioOne.checked = false;
 }
 
 
+
+
+var mapLink = document.querySelector(".map-image");
+
+var mapPopup = document.querySelector(".main-map");
+var mapClose = mapPopup.querySelector(".close-map");
+
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("visually-hidden");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("visually-hidden");
+
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (!mapPopup.classList.contains("visually-hidden")) {
+      mapPopup.classList.add("visually-hidden");
+    }
+  }
+});
+
+var linkCatalog = document.querySelectorAll(".buy-now");
+var popupCatalog = document.querySelector(".notification");
+var close = popupCatalog.querySelector(".close-cart");
+
+linkCatalog.forEach(function (item) {
+    item.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popupCatalog.classList.remove("visually-hidden");
+    });
+});
+
+close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupCatalog.classList.add("visually-hidden");
+
+});
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popupCatalog.classList.add("visually-hidden")) {
+            popupCatalog.classList.remove("visually-hidden");
+        }
+    }
+});
