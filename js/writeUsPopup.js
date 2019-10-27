@@ -26,19 +26,8 @@ if (writeUsPopup != null) {
         writeUsPopup.classList.remove("animation");
         writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
         writeUsPopup.classList.add("animation");
-
-        // if (storage) {
-        //     nameField.value = storage;
-        //     emailField.focus();
-        //         if (storage) {
-        //             emailField.value = storage;
-        //             textField.focus();}
-        //             else {
-        //                 emailField.focus();
-        //               }
-        //   } else {
         nameField.focus();
-        //   }
+      
 
     });
 
