@@ -44,6 +44,7 @@ img {
     
     border-radius: 3px;
     text-transform: uppercase;
+    vertical-align: top;
 }
 
 .button:hover,
@@ -128,7 +129,7 @@ html{
 {   background-image: url(../img/icon/icon-search-hover.svg);
     background-repeat: no-repeat;
     background-color: #212a3a;
-    background-position: 12px 12px;
+    background-position: 17px 12px;
 }
 .header-search:focus,
 .header-search:active{
@@ -136,7 +137,7 @@ html{
     background-repeat: no-repeat;
     background-color: #ffffff;
     color: #000000;
-    background-position: 12px 12px;
+    background-position: 17px 12px;
     
 }
 input[type="search"]::placeholder { color: #ffffff; } 
@@ -274,7 +275,7 @@ input[type="search"]::placeholder { color: #ffffff; }
     color: #32425c;
 
     padding-left: 44px;
-    padding-top: 8px;
+    padding-top: 45px;
     
 }
 .header-main:not(.header-catalog) .info-contacts {
@@ -366,7 +367,7 @@ input[type="search"]::placeholder { color: #ffffff; }
 .navigation-site a{
     display: inline-block;
     padding: 20px 30px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .navigation-site a:hover,
@@ -762,6 +763,7 @@ font-weight: normal;
    display: flex;
    justify-content: center;
    align-items: center;
+   vertical-align: top;
     }
     
     
@@ -893,6 +895,7 @@ font-weight: normal;
 .servises-credit a{
     display: inline-block;
     margin: 0 45px;
+    vertical-align: top;
 }
 
 /* Компания ТЕХНОМАРТ */
@@ -1077,6 +1080,9 @@ font-weight: normal;
     top: 20px;
     left: 10px;
     
+}
+.main-map iframe{
+    border: 0;
 }
 .main-map img{
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
@@ -1375,6 +1381,7 @@ background-color: #f7f3ec;
     line-height: 18px;
     text-align: center;
     padding-top: 10px;
+    vertical-align: top;
 }
 
 .filter-line{
@@ -1742,7 +1749,7 @@ input[type="radio"] {
 .header-info{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     min-height: 158px;
     max-width: 940px;
     padding: 0;
@@ -1753,7 +1760,7 @@ input[type="radio"] {
 .info-description{
     
     padding-left: 52px;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 .info-private{
@@ -1773,6 +1780,7 @@ input[type="radio"] {
 .info-enter a{
     display: inline-block;
     padding: auto 12px;
+    vertical-align: top;
 }
 
 .navigation-site {
@@ -1799,6 +1807,9 @@ input[type="radio"] {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+.box:last-child{
+    margin-right: 0;
+    }
 .catalog-part-three{
     display: flex;
     flex-direction: column;
