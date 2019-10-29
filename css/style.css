@@ -438,7 +438,7 @@ input[type="search"]::placeholder {
 	font-weight: bold;
 	text-transform: uppercase;
 	position: absolute;
-	top: 23px;
+	top: -14px;
 	left: 24px;
 }
 .tool-comment {
@@ -447,7 +447,7 @@ input[type="search"]::placeholder {
 	line-height: 24px;
 	font-weight: normal;
 	position: absolute;
-	top: 61px;
+	top: 43px;
 	left: 25px;
 }
 .catalog-main .button {
@@ -482,8 +482,9 @@ input[type="search"]::placeholder {
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
-	margin: 0;
+	margin: 0 auto;
 	margin-bottom: 11px;
+	max-width: 170px;
 }
 .catalog-item {
 	position: relative;
@@ -774,6 +775,7 @@ input[type="search"]::placeholder {
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: normal;
+	max-width: 540px;
 }
 .company-info h2 {
 	font-family: "Cuprum", Arial, Helvetica, sans-serif;
@@ -1634,19 +1636,25 @@ input[type="radio"] {
 	min-width: 295px;
 }
 .site-academy {
-	margin-right: 14px;
-}
-.mail-to-academy {
+	
 	padding-left: 60px;
 }
-.mail-to-academy:hover a,
-.site-academy:hover a {
+.mail-to-academy {
+	padding-left: 10px;
+}
+.mail-to-academy:hover,
+.site-academy:hover{
 	text-decoration: underline;
 }
-.mail-to-academy:active a,
-.site-academy:active a {
+.mail-to-academy:active,
+.site-academy:active{
 	text-decoration: none;
 	color: #ee3643;
+}
+.feedback-academy{
+
+	padding-right: 0px;
+	
 }
 .info-login {
 	display: flex;
