@@ -1,4 +1,3 @@
-/* Глобальные теги */
 body {
     margin: 0;
     padding: 0;
@@ -71,7 +70,7 @@ html{
     margin: 0 auto;
     padding: 0 10px;
   }
-/* header */
+
 
 .header-main {
     background-color: #f3f7f8;
@@ -86,7 +85,6 @@ html{
     height: 42px;
    
 }
-/* Логотип */
 .header-logo {
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
@@ -142,7 +140,7 @@ html{
 }
 input[type="search"]::placeholder { color: #ffffff; } 
 
-/* Закладки, Корзина, Оформить заказ */
+
 
 
 .header-bookmark{
@@ -229,7 +227,7 @@ input[type="search"]::placeholder { color: #ffffff; }
     background-color: #518534;
     color: #b6c8ae;
 }
-/* вторая часть */
+
 
 .info-description{
     font-family: "Cuprum", Arial, Helvetica, sans-serif; 
@@ -347,7 +345,6 @@ input[type="search"]::placeholder { color: #ffffff; }
     color: #c5c5c5;
 }
 
-/* Навигация */
 
 .navigation-mine{
     background-color: #32425c;
@@ -387,7 +384,6 @@ input[type="search"]::placeholder { color: #ffffff; }
     list-style: none;
 }
 
-/* Каталог предложений */
 
 .box{
     width: 300px;
@@ -464,7 +460,6 @@ input[type="search"]::placeholder { color: #ffffff; }
     background-position: 190px 32px;
 }
 
-/* Слайдер */
 .catalog-main{
     width: 620px;
     color: #ffffff;
@@ -529,10 +524,6 @@ input[type="search"]::placeholder { color: #ffffff; }
     top: 205px;
     left: 24px;
 }
-
-
-/* популярные товары */
-
 .popular-products {
     background-color: #f9f5f0;
     text-transform: uppercase;
@@ -550,11 +541,6 @@ input[type="search"]::placeholder { color: #ffffff; }
 .popular-products .button{
     width: 253px;
 }
-
-
-/* Перфораторы */
-
-
 .description-product {
     list-style: none;
     display: flex;
@@ -732,8 +718,6 @@ input[type="search"]::placeholder { color: #ffffff; }
     order: -1;
     margin-bottom: 5px;
 }
-/* Популярные производители */
-
 .popular-manufacturers{
 background-color: #f9f5f0;
 text-transform: uppercase;
@@ -749,8 +733,6 @@ font-weight: normal;
 .popular-manufacturers .button{
     width: 253px;
 }
-
-/* Производители */
 .manufacturers-list {
     list-style: none;
     
@@ -781,13 +763,13 @@ font-weight: normal;
     opacity: .3;
 }
 
-  /* Сервисы */
+ 
 
 .servises {
     background-color: #f4f7f9;
     font-size: 13px;
     line-height: 24px;
-    /* margin-bottom: 80px; */
+
   
 }
 .in-servises{
@@ -808,8 +790,7 @@ font-weight: normal;
     display: flex;
     justify-content: space-between;
     margin: 60px auto;
- /* min-width: 710px; */
- position: relative;
+    position: relative;
 }
 
 .shadow{
@@ -898,7 +879,6 @@ font-weight: normal;
     vertical-align: top;
 }
 
-/* Компания ТЕХНОМАРТ */
 .company-info{
     font-size: 13px;
     line-height: 24px;
@@ -945,7 +925,6 @@ font-weight: normal;
     margin-top: 16px;
     padding: 10px 40px;
 }
-/* Контакты */
 .company-contacts{
     font-size: 13px;
     line-height: 24px;
@@ -982,8 +961,6 @@ font-weight: normal;
     margin-top: 3px
     
 }
-
-/* попап */
 .contacts-form{
     border-top: #ff5357 solid 7px;
     width: 620px;
@@ -1087,8 +1064,6 @@ font-weight: normal;
 .main-map img{
     box-shadow: 0 0 16px rgba(0,0,0,0.5);
 }
-/* Подвал */
-/* Навигация в подвале */
 .footer-navigation{
     background-color: #32425c;
   }
@@ -1107,7 +1082,7 @@ font-weight: normal;
 }
 .footer-logo img{
     padding-top: 20px;
-    
+   
 }
 .footer-logo:hover {
     background-color: #ca2c37;
@@ -1137,8 +1112,6 @@ font-weight: normal;
     opacity: 0.3;
     text-decoration-line: none;
 }
-/* Контакты в подвале */
-
 .footer-feedback{
     background-color: #293449;
     font-family: "Cuprum", Arial, Helvetica, sans-serif; 
@@ -1167,7 +1140,6 @@ font-weight: normal;
 .social-button:active{
     background-color: #ee3643;
 }
-/* CATALOG --------------------------------------------------------------------------------------------------------------------------------------------*/
 .breadcrumbs{
     list-style: none;
     font-size: 13px;
@@ -1208,7 +1180,6 @@ font-weight: normal;
     font-weight: normal;
 
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     padding-left: 28px;
     max-width: 940px;
@@ -1259,7 +1230,6 @@ font-weight: normal;
     line-height: 18px;
     color: #32425c;
     text-decoration: underline;
-    /* margin-left: 23px; */
     padding: 0 15px;
    
 }
@@ -1274,7 +1244,6 @@ font-weight: normal;
     display: flex;
     align-items: center;
     margin-top: 6px;
-    /* justify-content: center; */
     padding-left: 23px;
     
     
@@ -1288,7 +1257,6 @@ font-weight: normal;
 .info-login{
     background-color: #ffffff;
 }
-/* ФИЛЬТРЫ */
 
 .filters h2{
     font-family: "PT Sans", Arial, Helvetica, sans-serif; 
@@ -1306,7 +1274,6 @@ font-weight: normal;
     max-width: 220px;
  
 }
-/* фильтр range */
 .range-window{
 background-color: #f7f3ec;
     height: 80px;
@@ -1391,9 +1358,6 @@ background-color: #f7f3ec;
     border: none;
     margin: 0;
 }
-   
-
-   /* Остальные Фильтры */
 .filter fieldset{
     border: none;
     text-transform: uppercase;
@@ -1586,7 +1550,6 @@ input[type="radio"] {
     padding: 9px 38px;
    }
 
-/* Страницы */
 .pagination-list{
     list-style: none;
     display: flex;
@@ -1636,7 +1599,6 @@ input[type="radio"] {
     color: #ffffff;
     border: none;
 }
-/* о перфораторах */
 .pre-footer{
     background-color: #f2f6f8;
     line-height: 24px;
@@ -1662,7 +1624,6 @@ input[type="radio"] {
     font-size: 13px;
     line-height: 24px;
 }
-/* pop-up */
 .perforator-footer{
     position: relative;
 }
@@ -1735,7 +1696,6 @@ input[type="radio"] {
     
     
 }
-/* --------------------------------------------------------ФЛЕКСЫ--------------------------------------------------------------------------------- */
 
 .header-main{
   width: 100%;
@@ -1753,9 +1713,6 @@ input[type="radio"] {
     min-height: 158px;
     max-width: 940px;
     padding: 0;
-    /* padding-top: 46px; */
-    
-    
 }
 .info-description{
     
@@ -1833,7 +1790,6 @@ input[type="radio"] {
     display: flex;
     justify-content: space-between;
     padding: 0px;
-    /* margin-bottom: 21px; */
     margin-bottom: 0;
 }
 .popular-manufacturers{
@@ -1854,8 +1810,6 @@ input[type="radio"] {
     margin: 0px;
     margin-bottom: 85px;
 }
-
-/* СЕРВИСЫ  БУДУТ ТУТ*/
 
 .technomart-info{
     display: flex;
@@ -1905,7 +1859,7 @@ input[type="radio"] {
     text-decoration: none;
     color: #ee3643;
 }
-/* CATALOG */
+
 .info-login{
     display: flex;
     min-width: 300px;
@@ -1932,7 +1886,7 @@ input[type="radio"] {
     justify-content: space-between;
 }
 
-/* animation */
+
 
 @keyframes bounce {
     0% {
