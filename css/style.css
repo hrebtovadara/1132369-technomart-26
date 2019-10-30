@@ -472,6 +472,7 @@ html {
 	width: 620px;
 	color: #ffffff;
 	position: relative;
+	background-color: #695C53;
 }
 
 .icon-left {
@@ -1104,7 +1105,7 @@ html {
 }
 
 .footer-logo img {
-	padding-top: 20px;
+	margin-top: 20px;
 }
 
 .footer-logo:hover {
@@ -1421,11 +1422,29 @@ html {
 }
 
 input[type="checkbox"] {
-	display: none;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 input[type="radio"] {
-	display: none;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .filter-option {
