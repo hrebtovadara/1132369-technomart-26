@@ -3,11 +3,9 @@ var writeUsPopup = document.querySelector(".contacts-form");
 
 if (writeUsPopup != null) {
     var close = writeUsPopup.querySelector(".close-writeus");
-
     var nameField = writeUsPopup.querySelector("[id=contacts-name]");
     var emailField = writeUsPopup.querySelector("[id=contacts-email]");
     var textField = writeUsPopup.querySelector("[id=contacts-text]");
-
     var isStorageSupport = true;
     var storage = "";
 
@@ -16,7 +14,6 @@ if (writeUsPopup != null) {
     } catch (err) {
         isStorageSupport = false;
     }
-
 
     var form = document.querySelector("form");
 
@@ -27,8 +24,6 @@ if (writeUsPopup != null) {
         writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
         writeUsPopup.classList.add("animation");
         nameField.focus();
-      
-
     });
 
     close.addEventListener("click", function (evt) {
@@ -61,15 +56,12 @@ if (writeUsPopup != null) {
         }
     });
 
-
     var buttonDelivery = document.querySelector(".button-delivery");
     var buttonGuarantee = document.querySelector(".button-guarantee");
     var buttonCredit = document.querySelector(".button-credit");
-
     var servisesDelivery = document.querySelector(".servises-delivery");
     var servisesGuarantee = document.querySelector(".servises-guarantee");
     var servisesCredit = document.querySelector(".servises-credit");
-
 
     buttonDelivery.addEventListener("click", function (evt) {
         evt.preventDefault();
@@ -77,20 +69,27 @@ if (writeUsPopup != null) {
         servisesDelivery.classList.remove("visually-hidden");
         servisesGuarantee.classList.add("visually-hidden");
         servisesCredit.classList.add("visually-hidden");
+        buttonDelivery.classList.add("servises-active");
+        buttonGuarantee.classList.remove("servises-active");
+        buttonCredit.classList.remove("servises-active");
     });
-
     buttonGuarantee.addEventListener("click", function (evt) {
         evt.preventDefault();
         servisesDelivery.classList.add("visually-hidden");
         servisesGuarantee.classList.remove("visually-hidden");
         servisesCredit.classList.add("visually-hidden");
+        buttonDelivery.classList.remove("servises-active");
+        buttonGuarantee.classList.add("servises-active");
+        buttonCredit.classList.remove("servises-active");
     });
-
     buttonCredit.addEventListener("click", function (evt) {
         evt.preventDefault();
         servisesDelivery.classList.add("visually-hidden");
         servisesGuarantee.classList.add("visually-hidden");
         servisesCredit.classList.remove("visually-hidden");
+        buttonDelivery.classList.remove("servises-active");
+        buttonGuarantee.classList.remove("servises-active");
+        buttonCredit.classList.add("servises-active");
     });
 
     var iconLeft = document.querySelector(".icon-left");
@@ -105,7 +104,6 @@ if (writeUsPopup != null) {
     radioOne.addEventListener("click", showFirstSlide);
     radioTwo.addEventListener("click", showSecondSlide);
 
-
     function changeSlide(evt) {
         evt.preventDefault();
         if (sliderOne.classList.contains("visually-hidden")) {
@@ -114,49 +112,36 @@ if (writeUsPopup != null) {
             showSecondSlide();
         }
     }
-
     function showFirstSlide() {
         sliderOne.classList.remove("visually-hidden");
         sliderOne.classList.add("slider-catalog");
-
         sliderTwo.classList.add("visually-hidden");
         sliderTwo.classList.remove("slider-catalog");
-
         radioTwo.checked = false;
         radioOne.checked = true;
     }
-
     function showSecondSlide() {
         sliderOne.classList.add("visually-hidden");
         sliderOne.classList.remove("slider-catalog");
-
         sliderTwo.classList.remove("visually-hidden");
         sliderTwo.classList.add("slider-catalog");
-
         radioTwo.checked = true;
         radioOne.checked = false;
     }
 
-
-
-
     var mapLink = document.querySelector(".map-image");
-
     var mapPopup = document.querySelector(".main-map");
     var mapClose = mapPopup.querySelector(".close-map");
-
 
     mapLink.addEventListener("click", function (evt) {
         evt.preventDefault();
         mapPopup.classList.remove("visually-hidden");
     });
-
     mapClose.addEventListener("click", function (evt) {
         evt.preventDefault();
         mapPopup.classList.add("visually-hidden");
 
     });
-
     window.addEventListener("keydown", function (evt) {
         if (evt.keyCode === 27) {
             evt.preventDefault();
@@ -166,7 +151,6 @@ if (writeUsPopup != null) {
         }
     });
 }
-
 
 var linkCatalog = document.querySelectorAll(".buy-now");
 var popupCatalog = document.querySelector(".notification");
@@ -178,7 +162,6 @@ linkCatalog.forEach(function (item) {
         popupCatalog.classList.remove("visually-hidden");
     });
 });
-
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupCatalog.classList.add("visually-hidden");
