@@ -33,7 +33,7 @@ html{box-sizing:border-box}
 .info-description{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:16px;line-height:23px;color:#ee3643;font-style:italic}
 .number{border:3px solid #fff;width:270px;height:45px;position:relative;padding-left:70px;padding-top:10px;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:21px;line-height:21px;color:#ee3643}
 .number::before{content:" ";min-width:19px;height:19px;position:absolute;top:10px;left:13px;background-image:url(../img/icon/icon-iphone.svg);background-repeat:no-repeat;background-position:0 0}
-.info-contacts{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;color:#32425c;padding-left:44px;padding-top:45px;max-width:158px}
+.info-contacts{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;color:#32425c;padding-left:44px;padding-top:45px;max-width:324px}
 .header-main:not(.header-catalog) .info-contacts{padding-left:54px}
 .info-contacts p{margin:0 auto;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;padding-top:5px;padding-left:9px}
 .info-enter li{background-color:#fff;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:21px;line-height:21px}

@@ -271,7 +271,7 @@ body {
 	color: #32425c;
 	padding-left: 44px;
 	padding-top: 45px;
-	max-width: 158px;
+	max-width: 324px;
   }
   
   .header-main:not(.header-catalog) .info-contacts {
@@ -1134,7 +1134,7 @@ body {
 	max-width: 586px;
 	width: 100%;
   }
-  
+
   .list-nav ul {
 	list-style: none;
   }
