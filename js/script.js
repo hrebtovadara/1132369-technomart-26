@@ -175,3 +175,17 @@ window.addEventListener("keydown", function (evt) {
         }
     }
 });
+
+var buyNow = document.querySelector(".buy-now");
+var buyLater = document.querySelector(".buy-later");
+var addCart = document.querySelector(".header-basket");
+
+
+buyNow.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    addCart.classList.add("header-basket-catalog");
+});
+buyLater.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    addCart.classList.add("header-basket-catalog");
+});
