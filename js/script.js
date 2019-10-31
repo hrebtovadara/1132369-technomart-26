@@ -155,12 +155,17 @@ if (writeUsPopup != null) {
 var linkCatalog = document.querySelectorAll(".buy-now");
 var popupCatalog = document.querySelector(".notification");
 var close = popupCatalog.querySelector(".close-cart");
+var addCart = document.querySelector(".header-basket");
+var amount = document.querySelector(".amount");
+var myVar = 0;
 
 linkCatalog.forEach(function (item) {
     item.addEventListener("click", function (evt) {
         evt.preventDefault();
         popupCatalog.classList.remove("visually-hidden");
-    });
+        addCart.classList.add("header-basket-catalog");
+        myVar++;
+        amount.textContent = myVar;
 });
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -175,17 +180,18 @@ window.addEventListener("keydown", function (evt) {
         }
     }
 });
-
-var buyNow = document.querySelector(".buy-now");
-var buyLater = document.querySelector(".buy-later");
-var addCart = document.querySelector(".header-basket");
-
-
-buyNow.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    addCart.classList.add("header-basket-catalog");
 });
-buyLater.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    addCart.classList.add("header-basket-catalog");
+
+var buyLater = document.querySelectorAll(".buy-later");
+var quantity = document.querySelector(".quantity");
+var addBookmark = document.querySelector(".header-bookmark");
+var myVarTwo = 0;
+
+buyLater.forEach(function (item) {
+    item.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        addBookmark.classList.add("header-basket-catalog");
+        myVarTwo++;
+        quantity.textContent = myVarTwo;
+    });
 });
