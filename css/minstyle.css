@@ -33,7 +33,7 @@ html{box-sizing:border-box}
 .info-description{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:16px;line-height:23px;color:#ee3643;font-style:italic}
 .number{border:3px solid #fff;width:270px;height:45px;position:relative;padding-left:70px;padding-top:10px;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:21px;line-height:21px;color:#ee3643}
 .number::before{content:" ";min-width:19px;height:19px;position:absolute;top:10px;left:13px;background-image:url(../img/icon/icon-iphone.svg);background-repeat:no-repeat;background-position:0 0}
-.info-contacts{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;color:#32425c;padding-left:44px;padding-top:45px}
+.info-contacts{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;color:#32425c;padding-left:44px;padding-top:45px;max-width:158px}
 .header-main:not(.header-catalog) .info-contacts{padding-left:54px}
 .info-contacts p{margin:0 auto;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;padding-top:5px;padding-left:9px}
 .info-enter li{background-color:#fff;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:21px;line-height:21px}
@@ -46,7 +46,7 @@ html{box-sizing:border-box}
 .check-in a{position:relative;min-width:150px;text-align:center;padding-top:12px;min-height:45px}
 .check-in a:hover{color:#ee3643}
 .check-in a:active{color:#c5c5c5}
-.navigation-mine{background-color:#32425c;color:#fff;font-family:"Cuprum",Arial,sans-serif;font-size:17px;line-height:17px;border-bottom:#293449 solid 5px;max-width:940px;max-height:60px;padding:0}
+.navigation-mine{background-color:#32425c;color:#fff;font-family:"Cuprum",Arial,sans-serif;font-size:17px;line-height:17px;border-bottom:#293449 solid 5px;max-width:940px;min-height:60px;padding:0}
 .navigation-site{margin:0;padding:0 21px;flex-wrap:wrap}
 .navigation-site a{display:inline-block;padding:20px 30px;vertical-align:top}
 .navigation-site a:hover,.navigation-site a:focus{background-color:#293449}
@@ -127,7 +127,7 @@ html{box-sizing:border-box}
 .company li::before{content:" ";position:absolute;top:8px;left:0;width:25px;height:2px;background-color:#ee3643;background-repeat:no-repeat}
 .company{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:18px;line-height:20px;padding:0}
 .company-info a{margin-top:16px;padding:10px 40px}
-.company-contacts{font-size:13px;line-height:24px;font-weight:400;position:relative}
+.company-contacts{font-size:13px;line-height:24px;font-weight:400;position:relative;max-width:300px}
 .contacts-map p{margin-bottom:30px}
 .contacts-map h2{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:30px;line-height:30px;font-weight:400;text-transform:uppercase;margin:0;margin-bottom:26px}
 .write-us{border:none;color:#fff;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;background-color:#ee3643;text-align:center;vertical-align:middle;border-radius:5px;text-transform:uppercase;padding:10px 62px;margin-top:3px}
@@ -151,6 +151,7 @@ html{box-sizing:border-box}
 .footer-logo:hover{background-color:#ca2c37;border-bottom:5px solid #9a212a}
 .footer-logo:active{background-color:#ba2732;border-bottom:5px solid #8e1e26}
 .footer-address{margin-top:28px;margin-left:4px}
+.list-nav{max-width: 586px;width: 100%}
 .list-nav ul{list-style:none}
 .list-nav a:hover,.list-nav a:focus{text-decoration-line:underline}
 .list-nav a:active{opacity:.3;text-decoration-line:none}

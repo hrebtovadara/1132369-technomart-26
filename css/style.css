@@ -271,6 +271,7 @@ body {
 	color: #32425c;
 	padding-left: 44px;
 	padding-top: 45px;
+	max-width: 158px;
   }
   
   .header-main:not(.header-catalog) .info-contacts {
@@ -354,7 +355,7 @@ body {
 	line-height: 17px;
 	border-bottom: #293449 solid 5px;
 	max-width: 940px;
-	max-height: 60px;
+	min-height: 60px;
 	padding: 0;
   }
   
@@ -957,6 +958,7 @@ body {
 	line-height: 24px;
 	font-weight: normal;
 	position: relative;
+	max-width: 300px;
   }
   
   .contacts-map p {
@@ -1126,6 +1128,11 @@ body {
   .footer-address {
 	margin-top: 28px;
 	margin-left: 4px;
+  }
+  
+  .list-nav{
+	max-width: 586px;
+	width: 100%;
   }
   
   .list-nav ul {
