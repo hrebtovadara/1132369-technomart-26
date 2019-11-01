@@ -5,7 +5,7 @@ img{max-width:100%}
 .button{color:#fff;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;display:inline-block;text-align:center;height:38px;padding-top:11px;background-color:#ee3643;border-radius:3px;text-transform:uppercase;vertical-align:top}
 .button:hover,.button:focus{background-color:#ca2c37}
 .button:active{background-color:#ba2732}
-footer{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:18px;line-height:24px;color:#fff}
+.footer{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:18px;line-height:24px;color:#fff}
 *,::before,::after{box-sizing:inherit}
 html{box-sizing:border-box}
 .container{width:960px;margin:0 auto;padding:0 10px}
@@ -30,7 +30,7 @@ html{box-sizing:border-box}
 .header-order{background-color:#63a63e;width:150px;padding-top:12px;text-align:center}
 .header-order:hover,.header-order:focus{background-color:#5fbb2d}
 .header-order:active{background-color:#518534;color:#b6c8ae}
-.info-description{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:16px;line-height:23px;color:#ee3643;font-style:italic}
+.info-description{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:16px;line-height:23px;color:#ee3643;font-style:italic;width:249px}
 .number{border:3px solid #fff;width:270px;height:45px;position:relative;padding-left:70px;padding-top:10px;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:21px;line-height:21px;color:#ee3643}
 .number::before{content:" ";min-width:19px;height:19px;position:absolute;top:10px;left:13px;background-image:url(../img/icon/icon-iphone.svg);background-repeat:no-repeat;background-position:0 0}
 .info-contacts{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;color:#32425c;padding-left:44px;padding-top:45px;max-width:324px}
@@ -103,6 +103,7 @@ html{box-sizing:border-box}
 .manufacturers-list li:active{box-shadow:0 4px 10px rgba(41,52,73,0.5);border:none}
 .manufacturers-list li:active img{opacity:.3}
 .servises{background-color:#f4f7f9;font-size:13px;line-height:24px}
+.servises-info{width:400px}
 .in-servises{max-width:960px;min-height:522px;margin:0 auto;padding-top:40px;padding-left:10px}
 .servises h2{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:30px;line-height:30px;text-transform:uppercase;font-weight:400}
 .servises-description{display:flex;justify-content:space-between;margin:60px auto;position:relative}
@@ -117,20 +118,23 @@ html{box-sizing:border-box}
 .servises-item h3{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:36px;line-height:36px;font-weight:400;text-transform:uppercase;color:#32425c;margin:0}
 .servises-item p{margin-top:22px;margin-bottom:27px}
 .servises-delivery{background-image:url(../img/servise/servise-3.png);background-repeat:no-repeat;background-position:150px 22px}
+.servises-delivery p{width:278px}
 .servises-guarantee{background-image:url(../img/servise/servise-2.png);background-repeat:no-repeat;background-position:240px 0}
+.servises-guarantee p{width:375px}
 .servises-credit{background-image:url(../img/servise/servise-1.png);background-repeat:no-repeat;background-position:165px 0}
 .servises-credit a{display:inline-block;margin:0 45px;vertical-align:top}
 .company-info{font-size:13px;line-height:24px;font-weight:400;max-width:540px}
+.company-info p:nth-child(3){width:386px}
 .company-info h2{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:30px;line-height:30px;font-weight:400;text-transform:uppercase;margin:0;margin-bottom:25px}
 .company-info p{margin-bottom:23px}
 .company li{list-style:none;margin-bottom:20px;padding-left:37px;position:relative}
 .company li::before{content:" ";position:absolute;top:8px;left:0;width:25px;height:2px;background-color:#ee3643;background-repeat:no-repeat}
 .company{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:18px;line-height:20px;padding:0}
 .company-info a{margin-top:16px;padding:10px 40px}
-.company-contacts{font-size:13px;line-height:24px;font-weight:400;position:relative;max-width:300px}
-.contacts-map p{margin-bottom:30px}
+.company-contacts{font-size:13px;line-height:24px;font-weight:400;position:relative;max-width:302px}
+.contacts-map p{margin-bottom:30px;width:180px}
 .contacts-map h2{font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:30px;line-height:30px;font-weight:400;text-transform:uppercase;margin:0;margin-bottom:26px}
-.write-us{border:none;color:#fff;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;background-color:#ee3643;text-align:center;vertical-align:middle;border-radius:5px;text-transform:uppercase;padding:10px 62px;margin-top:3px}
+.write-us{border:none;color:#fff;font-family:"Cuprum",Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;background-color:#ee3643;text-align:center;vertical-align:middle;border-radius:5px;text-transform:uppercase;padding:10px 62px;margin-top:32px}
 .contacts-form{border-top:#ff5357 solid 7px;width:620px;height:430px;box-shadow:0 20px 40px rgba(0,0,0,0.75);position:absolute;top:125px;right:160px;background-color:#f4f4f4}
 .contacts-input{display:flex;flex-wrap:wrap;justify-content:center;align-content:flex-start;background-color:#fff;min-height:311px}
 .contacts-item{max-width:220px;max-height:75px;margin:0 10px;margin-top:45px;margin-bottom:0}
@@ -150,8 +154,8 @@ html{box-sizing:border-box}
 .footer-logo img{margin-top:20px}
 .footer-logo:hover{background-color:#ca2c37;border-bottom:5px solid #9a212a}
 .footer-logo:active{background-color:#ba2732;border-bottom:5px solid #8e1e26}
-.footer-address{margin-top:28px;margin-left:4px}
-.list-nav{max-width: 586px;width: 100%}
+.footer-address{margin-top:28px;margin-left:4px;width:323px}
+.list-nav{max-width:586px;width:100%}
 .list-nav ul{list-style:none}
 .list-nav a:hover,.list-nav a:focus{text-decoration-line:underline}
 .list-nav a:active{opacity:.3;text-decoration-line:none}
@@ -195,11 +199,13 @@ html{box-sizing:border-box}
 .filter ul{list-style:none;line-height:20px;padding:0;margin:0}
 input[type="checkbox"]{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;white-space:nowrap;clip-path:inset(100%);clip:rect(0 0 0 0);overflow:hidden}
 input[type="radio"]{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;white-space:nowrap;clip-path:inset(100%);clip:rect(0 0 0 0);overflow:hidden}
-.filter-option{margin-bottom:20px;padding-left:35px;position:relative;font-size:15px;line-height:20px}
-.filter-input-checkbox+label::before{content:" ";position:absolute;left:0;top:-2px;width:23px;height:23px;border:2px solid #b5b5b5;border-radius:2px;opacity:.78}
-.filter-input-checkbox:checked+label::before{content:"";position:absolute;left:0;top:-2px;width:27px;height:23px;background-image:url(../img/icon/checkbox-active.svg);background-repeat:no-repeat;border:none;opacity:.78}
-.filter-input-radio+label::before{content:" ";position:absolute;left:0;top:-3px;width:25px;height:25px;border:4px solid #b5b5b5;border-radius:50px;opacity:.78}
-.filter-input-radio:checked+label::after{content:"";position:absolute;left:8px;top:5px;width:9px;height:9px;border-radius:50px;background-color:#b5b5b5;opacity:.78}
+.filter-option{margin-bottom:20px;padding-left:35px;position:relative;font-size:15px;line-height:20px;opacity:.78}
+.filter-option:hover,.filter-option:focus{opacity:1}
+.filter-option:active{opacity:.3}
+.filter-input-checkbox+label::before{content:" ";position:absolute;left:0;top:-2px;width:23px;height:23px;border:2px solid #b5b5b5;border-radius:2px}
+.filter-input-checkbox:checked+label::before{content:"";position:absolute;left:0;top:-2px;width:27px;height:23px;background-image:url(../img/icon/checkbox-active.svg);background-repeat:no-repeat;border:none}
+.filter-input-radio+label::before{content:" ";position:absolute;left:0;top:-3px;width:25px;height:25px;border:4px solid #b5b5b5;border-radius:50px}
+.filter-input-radio:checked+label::after{content:"";position:absolute;left:8px;top:5px;width:9px;height:9px;border-radius:50px;background-color:#b5b5b5}
 .filter-input:disabled+label{opacity:.4;color:#000}
 .sorting h2{font-family:"PT Sans",Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;font-weight:400;text-transform:uppercase;background-color:#f7f3ec}
 .sorting-main{max-width:700px;margin-left:20px}
@@ -260,7 +266,7 @@ input[type="radio"]{position:absolute;width:1px;height:1px;margin:-1px;border:0;
 .footer-nav-site{padding-top:20px;display:flex;justify-content:space-between;min-width:586px;flex-wrap:wrap}
 .footer-nav-technics{padding-top:16px;display:flex;justify-content:space-between;min-width:540px;margin-left:22px;color:#ffd180;flex-wrap:wrap}
 .footer-end{display:flex;justify-content:space-between;align-items:center;min-height:107px}
-.copyright{min-width:295px}
+.copyright{max-width:225px;margin-right:70px}
 .feedback-academy{padding-left:62px}
 .feedback-developed{padding-right:12px}
 .mail-to-academy:hover,.site-academy:hover{text-decoration:underline}
