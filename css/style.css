@@ -1484,15 +1484,18 @@
     position: relative;
     font-size: 15px;
     line-height: 20px;
-    opacity: 0.78;
   }
   
-  .filter-option:hover,
-  .filter-option:focus {
-    opacity: 1;
+  .filter-input + label {
+	opacity: 0.78;
   }
   
-  .filter-option:active {
+  .filter-input:hover + label,
+  .filter-input:focus + label {
+	opacity: 1;
+  }
+
+  .filter-input:active + label {
     opacity: 0.3;
   }
   
